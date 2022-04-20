@@ -94,7 +94,7 @@ nav {
 }
 header {
     height: 100vh;
-    background-image: url(../assets/images/header.png);
+    background-image: url(../assets/images/header.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -281,19 +281,17 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    nav {
-        flex-direction: row;
-    }
+
+    nav {flex-direction: row}
+    
     .nav-right {
         display: block;
         margin-right: 12px;
     }
-    .nav-right ul {
-        display: flex;
-    }
-    .burger-button {
-        display: none;
-    }
+
+    .nav-right ul {display: flex}
+    .burger-button {display: none}
+
     .about-card {
         flex-direction: row;
         width: 80%;
