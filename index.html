@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Web developer Portfolio, my name is Thomas and i invite you to see my personal portfolio. ">
     <title>Orlando Díaz Torrealva</title>
     <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <header>
-    <nav>
-        <div class="nav-left">
-            
-        </div>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <div class="nav-left"></div>
         <div class="nav-right">
-            <ul>
-                <li><a class="nav-links" href="#about">About</a></li>
-                <li><a class="nav-links" href="#projects">Projects</a></li>
-                <li><a class="nav-links" href="#contact">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a class="nav-links" href="#about">About</a></li>
+            <li><a class="nav-links" href="#projects">Portfolio</a></li>
+            <li><a class="nav-links" href="#contact">Contact</a></li>
+          </ul>
         </div>
         <div class="burger-button">
-            <div class="burger-line"></div>
-            <div class="burger-line"></div>
-            <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
         </div>
-    </nav>
+      </nav>
 
-    <h1 class="title">Frontend web <br>developer</h1>
-    <p class="header-description">
-        Learn more about me
-    </p>
+      <h1 class="title">Frontend web <br>developer</h1>
+      <p class="header-description">Learn more about me</p>
     </header>
 
     <section id="about">
-        <div class="about-card">
-            <img src="./assets/images/profile.jpg" alt="Foto de mi rostro en un sendero">
-            <div class="card-info-container">
-                <h3>Hi! I am Orlando Díaz (Thomas).</h3>
-                <p>I am a web Developer specialized in Frontend Development, i like to code and enjoy doing it.
-                    My studies based on this area were through Platzi.
-                    I am learning new technologies everyday for improve my skills.</p>
-            </div>
-        </div>
+      <div class="about-card">
+        <img src="./assets/images/profile.jpg" alt="Foto de mi rostro en un sendero">
+          <div class="card-info-container">
+            <h3>Hi! I am Orlando Díaz (Thomas).</h3>
+            <p>I am a web Developer specialized in Frontend Development, i like to code and enjoy doing it.
+            My studies based on this area were through Platzi.
+            I am learning new technologies everyday for improve my skills.</p>
+          </div>
+      </div>
 
-        <div class="about-card">
-            <div class="icon-tile" title="HTML"></div>
-            <div class="icon-tile" title="CSS"></div>
-            <div class="icon-tile" title="JavaScript"></div>
-            <!-- <div class="icon-tile" title="React"></div> -->
-        </div>
+      <div class="about-card">
+        <div class="icon-tile" title="HTML"></div>
+        <div class="icon-tile" title="CSS"></div>
+        <div class="icon-tile" title="JavaScript"></div>
+        <div class="icon-tile" title="Webpack"></div>
+      </div>
     </section>
 
     <section id="projects">
-        <h2>My works</h2>
+        <h2>Projects</h2>
         <section class="projects-grid">
 
             <a href="https://codepen.io/thomasjodt/full/qBpKWOp" target="_blank" class="project-card">
@@ -82,33 +80,40 @@
     </section>
 
     <section id="contact">
-        <h2>Contact me</h2>
+      <h2>Contact me</h2>
 
-        <form action="https://formsubmit.co/jodt5200@gmail.com" method="POST" />
-            <label for="name"> Name</label>
-            <input type="text" name="name" id="name" class="key-entry" placeholder="Name" required>
+      <form action="https://formsubmit.co/jodt5200@gmail.com" method="POST" >
+        <label for="name"> Name</label>
+        <input type="text" name="name" id="name" class="key-entry" placeholder="Name" required>
 
-            <label for="email"> Email</label>
-            <input type="email" name="email" id="email" class="key-entry" placeholder="Email" required>
+        <label for="email"> Email</label>
+        <input type="email" name="email" id="email" class="key-entry" placeholder="Email" required>
 
-            <textarea name="message" id="message" class="key-entry" placeholder="Type your message..."></textarea>
+        <textarea name="message" id="message" class="key-entry" placeholder="Type your message..."></textarea>
 
-            <button>send</button>
-        </form>
+        <button>send</button>
+      </form>
 
-        <footer>
-            <div class="footer-left">
-                <ul>
-                    <li><a href="https://www.facebook.com/orlando.diaztorrealva/" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.linkedin.com/in/javier-orlando-diaz-torrealva-83b00b16a/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://www.github.com/thomasjodt" target="_blank">Github</a></li>
-                </ul>
-            </div>
-            <div class="footer-right">
-                
-            </div>
-        </footer>
+      <footer>
+        <div class="footer-left">
+          <ul>
+            <li><a href="https://www.facebook.com/orlando.diaztorrealva/" target="_blank">
+              <i class='bx bxl-facebook-circle'></i>
+              <span>Facebook</span>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/javier-orlando-diaz-torrealva-83b00b16a/" target="_blank">
+              <i class='bx bxl-linkedin-square'></i>
+              <span>LinkedIn</span>
+            </a></li>
+            <li><a href="https://www.github.com/thomasjodt" target="_blank">
+              <i class='bx bxl-github' ></i>
+              <span>GitHub</span>
+            </a></li>
+          </ul>
+        </div>
+          <a href="#header" class="footer-right"></a>
+      </footer>
     </section>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
