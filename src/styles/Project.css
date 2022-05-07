@@ -1,0 +1,31 @@
+@import url(./main.css);
+
+.project-container {
+  width:            300px;
+  height:           150px;
+  margin:           0 auto;
+  margin-bottom:    24px;
+  border-radius:    12px;
+  font-weight:      bold;
+  overflow:         hidden;
+  display:          flex;
+  align-items:      center;
+  justify-content:  stretch;
+  color:            var(--pure-white);
+  background:       var(--soft-black);
+}
+
+.project-image {
+  height:     100%;
+  width:      150px;
+  display:    inline-block;
+
+}
+.project-name {
+  width:      calc(100% - 150px);
+  text-align: center;
+}
+.project-container:hover .project-name {
+  transition: all .4s ease;
+  color:      var(--primary-color);
+}

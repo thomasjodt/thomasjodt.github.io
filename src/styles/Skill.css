@@ -1,0 +1,12 @@
+@import url(./main.css);
+
+.skill-container {
+  width: 70px;
+  border-radius: 10px;
+  background-color: var(--regular-black);
+}
+.skill-container img {
+  margin:         0;
+  border-radius:  0;
+  padding:        10px;
+}

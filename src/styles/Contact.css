@@ -1,0 +1,59 @@
+@import url(./main.css);
+
+.contact-title {
+  padding:          30px;
+  font-size:        3rem;
+  margin-bottom:    100px;
+  font-weight:      bold;
+  text-transform:   uppercase;
+}
+.contact-form {
+  gap:            16px;
+  width:          300px;
+  margin:         0 auto;
+  display:        flex;
+  margin-bottom:  64px;
+  flex-direction: column;
+}
+.textfield {
+  width:          100%;
+  padding:        12px;
+  font-size:      1.4rem;
+  border-radius:  12px;
+  color: var(--soft-black);
+}
+.contact-button {
+  padding:          12px;
+  font-size:        1.4rem;
+  border-radius:    12px;
+  font-weight:      bold;
+  text-transform:   uppercase;
+  color:            var(--pure-white);
+  background:       var(--second-color);
+
+}
+.footer {
+  height:             150px;
+  display:            flex;
+  align-items:        center;
+  justify-content:    space-between;
+  background-color:   var(--regular-black);
+}
+.contact-list {
+  margin-left:  24px;
+}
+.contact-link {
+  font-size:    1.8rem;
+  font-weight:  bold;
+}
+.contact-link:hover {
+  color:        var(--primary-color);
+}
+
+.footer-logo img {
+  width:              100px;
+  height:             100px;
+  margin-right:             24px;
+  border-radius:      50%;
+  background-color:   var(--pure-white);
+}
