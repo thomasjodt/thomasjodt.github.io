@@ -58,7 +58,6 @@
   transform: translateX(0);
 }
 .nav-list li {
-  padding:          24px;
   font-size:        2rem;
   display:          block;
   font-weight:      bold;
@@ -69,6 +68,11 @@
 }
 .nav-list.active li:hover a {
   color: var(--soft-black);
+}
+.nav-item {
+  width:    100%;
+  padding:  24px;
+  display:  inline-block;
 }
 .header-logo {
   z-index:    1;

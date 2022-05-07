@@ -1,7 +1,6 @@
 import '@styles/Portfolio.css'
 import Project from './Project'
 import { projects } from '../assets/info'
-import { v4 } from 'uuid'
 
 export default function Portfolio() {
   return (
