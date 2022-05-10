@@ -33,6 +33,11 @@ export default function Home() {
               Contact
           </a></li>
         </ul>
+        <ul className="navlist-desktop">
+          <li className='navItem-desktop' ><a href="#About">About</a></li>
+          <li className='navItem-desktop' ><a href="#Portfolio">Portfolio</a></li>
+          <li className='navItem-desktop' ><a href="#Contact">Contact</a></li>
+        </ul>
         <div
           className={`burger-button ${active}`}
           onClick={handlerBurger} >

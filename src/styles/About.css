@@ -1,7 +1,5 @@
 @import url(./main.css);
-#About {
-  min-height: 100vh;
-}
+
 .about-title {
   font-weight:      500;
   text-decoration:  underline;
@@ -12,9 +10,10 @@
   width:            90%;
   padding:          32px;
   border-radius:    24px;
-  margin:           0 auto 48px;
-  background-color: var(--soft-black);
+  margin:           0 auto;
+  background-color: rgba(34,34,34,.75);
   text-align:       center;
+  position:         relative;
 }
 .card-info img {
   border-radius: 50%;
@@ -29,6 +28,13 @@
   font-size:      1.8rem;
   margin-bottom:  32px;
 }
+.info-about-me {
+  margin-bottom:    48px;
+  display:          flex;
+  align-items:      center;
+  flex-direction:   column;
+  justify-content:  center;
+}
 .skills-container {
   gap:              24px;
   display:          flex;
@@ -41,6 +47,10 @@
     width:      75%;
     padding:    24px;
     max-width:  600px;
+  }
+  .card-info > img {
+    width: 75%;
+    margin: 0 auto 36px;
   }
   .card-info h3 {
     font-size: 2.2rem;
@@ -55,16 +65,21 @@
   .info-about-me {
     gap:              10%;
     padding:          24px;
-    display:          flex;
+    flex-direction:   row;
     align-items:      center;
     justify-content:  space-around;
   }
   .info-container {
-    padding: 4px;
+    margin-bottom: 36px;
   }
   .card-info > img {
     margin:   0;
     padding:  12px;
     height:   250px;
+    width:    250px;
+  }
+  .btn {
+    position: absolute;
+    bottom: 12px;
   }
 }

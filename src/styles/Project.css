@@ -17,12 +17,13 @@
 
 .project-image {
   height:     100%;
-  width:      150px;
-  display:    inline-block;
+  width:      auto;
+  display:    block;
 
 }
 .project-name {
   width:      calc(100% - 150px);
+  min-width: 120px;
   text-align: center;
 }
 .project-container:hover .project-name {
@@ -43,11 +44,17 @@
 
 @media screen and (min-width: 700px) {
   .project-container {
-    width: 300px;
+    width:          300px;
+    height:         100%;
+    flex-direction: column;
   }
   .project-name {
-    width: calc(100% - 200px);
-    padding: 12px 4px;
-    display: block;
+    width:      100%;
+    padding:    12px 4px;
+    display:    block;
+  }
+  .project-image {
+    width:    300px;
+    height:   300px;
   }
 }

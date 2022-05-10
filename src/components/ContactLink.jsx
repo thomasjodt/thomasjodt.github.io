@@ -2,7 +2,7 @@ import '../styles/ContactLink.css'
 
 export default function ContactLink({ name, url}) {
   return (
-    <li>
+    <li className='contact-link' >
       <a
         target='_blank'
         className='contact-link'

@@ -21,6 +21,7 @@ export default function About() {
         </div>
         {/* <a
           href='#'
+          download
           className='btn' >
             Download CV
         </a> */}
