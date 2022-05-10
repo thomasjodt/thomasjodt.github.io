@@ -6,7 +6,9 @@ export default function Project({ image, name, url }) {
       target='_blank'
       href={url}
       className='project-container' >
-        <p className='project-name' >{name}</p>
+        <div className='project-name' >
+          <p>{name}</p>
+        </div>
         <img
           className='project-image'
           src={require(`@images/${image}`)}

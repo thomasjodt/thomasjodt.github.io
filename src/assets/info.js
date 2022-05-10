@@ -20,6 +20,11 @@ export const projects = [
     name: 'Tribute Page',
     url: 'https://codepen.io/thomasjodt/full/vYpRoxd',
     image: 'tribute.png'
+  },
+  {
+    name: 'Doggos App',
+    url: 'https://tom-doggos-app.netlify.app/',
+    image: 'doggos.png'
   }
 ]
 export const socialMedia = [

@@ -129,8 +129,8 @@
     text-transform:   uppercase;
   }
   .navItem-desktop:hover a {
-    color:            var(--strong-black);
-    background-color: var(--primary-color);
+    color:            var(--primary-color);
+    background-color: var(--soft-black);
   }
 
 }

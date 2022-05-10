@@ -1,5 +1,10 @@
 @import url(./main.css);
 
+#About {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
 .about-title {
   font-weight:      500;
   text-decoration:  underline;
