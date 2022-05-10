@@ -1,7 +1,7 @@
 @import url(./main.css);
 
 .project-container {
-  width:            300px;
+  width:            90%;
   height:           150px;
   margin:           0 auto;
   margin-bottom:    24px;
@@ -28,4 +28,15 @@
 .project-container:hover .project-name {
   transition: all .4s ease;
   color:      var(--primary-color);
+}
+
+@media screen and (min-width: 500px) {
+  .project-container {
+    width: 75%;
+    height: 200px;
+    max-width: 600px;
+  }
+  .project-image {
+    width: 200px;
+  }
 }

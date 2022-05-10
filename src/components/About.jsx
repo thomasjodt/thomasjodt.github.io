@@ -2,13 +2,12 @@ import '@styles/About.css'
 import profile from "../assets/images/me.jpg"
 import Skill from './Skill'
 import { skills } from '../assets/info'
-import { v4 } from 'uuid'
 
 export default function About() {
   return (
     <section id='About' >
       <h2 className='about-title' >Who am i?</h2>
-      <div className='card-info' >
+      <div className='card-info info-about-me' >
         <img
           src={profile}
           alt="Profile Photo" />
@@ -20,6 +19,11 @@ export default function About() {
             My studies based on this area were trough Platzi, freeCodeCamp and other platforms to gain more experience.
           </p>
         </div>
+        {/* <a
+          href='#'
+          className='btn' >
+            Download CV
+        </a> */}
       </div>
       <h2 className='about-title' >My Skills</h2>
       <div className='card-info skills-container' >

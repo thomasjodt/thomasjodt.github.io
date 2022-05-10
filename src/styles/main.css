@@ -64,39 +64,26 @@ a {
   transition: all .4s ease;
   color:      var(--pure-white);
 }
-.container {
-  margin:     0 auto;
-  width:      var(--container-width-lg);
-}
+textarea { resize: none; }
+
 .btn {
-  width:          max-content;
-  color:          var(--second-color);
-  padding:        .75rem 1.2rem;
-  border-radius:  .4rem;
-  cursor:         pointer;
-  border:         1px solid var(--primary-color);
-  transition:     all .4s ease;
+  padding:          12px;
+  font-size:        1.4rem;
+  border-radius:    12px;
+  cursor:           pointer;
+  font-weight:      bold;
+  text-transform:   uppercase;
+  transition:       all .2s ease;
+  color:            var(--pure-white);
+  background:       var(--second-color);
 }
 .btn:hover {
   border-color:     transparent;
-  background-color: var(--pure-white);
-  color:            var(--second-color);
+  background-color: var(--strong-black);
+  color:            var(--primary-color);
 }
 .btn-primary {
   color:            var(--regular-black);
   background-color: var(--primary-color);
 }
 
-/* ======= MEDIA QUERIES (MEDIUM DEVICES) ============ */
-
-@media screen and (max-width: 1024px) {
-  .container { width: var(--container-width-md) }
-  section { margin-top: 6rem }
-}
-
-/* ======= MEDIA QUERIES (SMALL DEVICES) ============ */
-
-@media screen and (max-width: 600px) {
-  .container { width: var(--container-width-sm) }
-  section > h2 { margin-bottom: 2rem }
-}
