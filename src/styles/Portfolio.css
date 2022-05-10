@@ -2,13 +2,26 @@
 
 #Portfolio {
   min-height:       100vh;
-  display:          flex;
-  flex-direction:   column;
-  justify-content:  center;
 }
-
 .portfolio-title {
   font-size:        3rem;
   font-weight:      bold;
   text-transform:   uppercase;
+}
+.projects-layout {
+  display:          flex;
+  flex-direction:   column;
+  justify-content:  center;
+  margin:           0 auto;
+}
+
+@media screen and (min-width: 700px) {
+  .projects-layout {
+    flex-direction:   row;
+    justify-content:  center;
+    align-items:      center;
+    flex-wrap:        wrap;
+    max-width:        1000px;
+    gap:              32px;
+  }
 }
