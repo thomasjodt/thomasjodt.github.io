@@ -1,88 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
-
-/* VARIABLES */
 :root {
-  --pure-white:     #EEE;
-  --second-color:   #08B;
-  --primary-color:  #0AF;
-  --soft-black:     #222;
-  --strong-black:   #111;
-  --regular-black:  #161616;
-
-  --container-width-lg: 75%;
-  --container-width-md: 86%;
-  --container-width-sm: 90%;
-}
-::-webkit-scrollbar {
-  width:              10px;
-  background-color: #222;
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--second-color);
-  border-radius:    5px;
-}
-
-/* Selector Reset */
-
-html {
-  font-size:        62.5%;
-  scroll-behavior:  smooth;
-}
-h1, h2, h3, h4, h5, h6 { font-weight: 500 }
-img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
+  --ghost-white:        #F0EFF4;
+  --smoky-black:        #161616;
+  --oxford-blue:        #02182B;
+  --space-cadet:        #21275B;
+  --ultramarine-blue:   #4361EE;
 }
 * {
   margin:           0;
   padding:          0;
-  border:           0;
-  outline:          0;
+  border:           none;
+  outline:          none;
+  box-sizing:       border-box;
   list-style:       none;
   text-decoration:  none;
-  box-sizing:       border-box;
+  color:          #111;
 }
-body {
-  min-height:            100vh;
-  font-size:             1.6rem;
-  line-height:           1.6;
-  font-family:           'Quicksand', sans-serif;
-  color:                 var(--pure-white);
-  background-image:      url(../assets/images/body-bg.svg);
-  background-attachment: fixed;
-}
-h1 { font-size: 2.5rem }
-section { margin-top: 8rem }
-
-section > h2, section > h5 {
-  text-align: center;
-  color:      var(--pure-white);
-}
-section > h2 { margin-bottom: 3rem }
-a {
-  transition: all .4s ease;
-  color:      var(--pure-white);
-}
-textarea { resize: none; }
-
-.btn {
-  padding:          12px;
-  font-size:        1.4rem;
-  border-radius:    12px;
-  cursor:           pointer;
-  font-weight:      bold;
-  text-transform:   uppercase;
-  transition:       all .2s ease;
-  color:            var(--pure-white);
-  background:       var(--second-color);
-}
-.btn:hover {
-  border-color:     transparent;
-  background-color: var(--strong-black);
-  color:            var(--primary-color);
-}
-.btn-primary {
-  color:            var(--regular-black);
-  background-color: var(--primary-color);
+html {
+  font-family:      'Outfit', sans-serif;
+  scroll-behavior:  smooth;
+  font-size:        62.5%;
 }
