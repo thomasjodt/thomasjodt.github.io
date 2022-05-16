@@ -26,6 +26,11 @@ export const projects = [
     name: 'Doggos App',
     url: 'https://tom-doggos-app.netlify.app/',
     image: 'doggos.png'
+  },
+  {
+    name: 'Rick & Morty Visualizer',
+    url: 'https://ricknmortyviz.netlify.app/',
+    image: 'ricknmortyviz.jpg'
   }
 ]
 export const socialMedia = [

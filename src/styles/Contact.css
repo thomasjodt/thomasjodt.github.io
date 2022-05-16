@@ -24,6 +24,9 @@
   margin-bottom:    64px;
   background-color: rgba(34, 34, 34, 0.5);
 }
+.contact-form label {
+  font-size: 1.8rem;
+}
 .textfield {
   width:          100%;
   padding:        12px;

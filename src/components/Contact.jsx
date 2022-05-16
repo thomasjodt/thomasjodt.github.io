@@ -13,6 +13,7 @@ export default function Contact() {
         method="POST" >
 
           <label htmlFor="name">
+            Name:
             <input
               className='textfield'
               type="text"
@@ -22,6 +23,7 @@ export default function Contact() {
           </label>
 
           <label htmlFor="email">
+            Email:
             <input
               className='textfield'
             type="email"
@@ -31,6 +33,7 @@ export default function Contact() {
           </label>
 
           <label htmlFor="message">
+            Message:
             <textarea
               className='textfield'
               name="message"
