@@ -2,8 +2,9 @@ export const skills = [
   { name: 'HTML', icon: 'html.svg' },
   { name: 'CSS', icon: 'css.svg' },
   { name: 'JavaScript', icon: 'js.svg' },
+  { name: 'GIT', icon: 'git.svg' },
   { name: 'Webpack', icon: 'webpack.svg' },
-  { name: 'React', icon: 'react.svg' }
+  { name: 'React', icon: 'react.svg' },
 ]
 export const projects = [
   {
