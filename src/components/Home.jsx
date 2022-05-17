@@ -1,59 +1,30 @@
-import { useState } from 'react'
-import logo from '../assets/images/logo.png'
-
-import '@styles/Home.css'
+import { Link } from 'react-router-dom'
+import '../styles/Home.css'
 
 export default function Home() {
-  const [active, setActive] = useState('')
-  const handlerBurger = () => {
-    if (active === '') {
-      setActive('active')
-    } else {
-      setActive('')
-    }
-  }
-
   return (
-    <header id='Home' >
-      <nav className="main-navbar">
-        <ul className={`nav-list ${active}`} >
-          <li onClick={handlerBurger} ><a
-            className='nav-item'
-            href="#About" >
-              About
-          </a></li>
-          <li onClick={handlerBurger} ><a
-            className='nav-item'
-            href="#Portfolio" >
-              Portfolio
-          </a></li>
-          <li onClick={handlerBurger} ><a
-            className='nav-item'
-            href="#Contact" >
-              Contact
-          </a></li>
-        </ul>
-        <ul className="navlist-desktop">
-          <li className='navItem-desktop' ><a href="#About">About</a></li>
-          <li className='navItem-desktop' ><a href="#Portfolio">Portfolio</a></li>
-          <li className='navItem-desktop' ><a href="#Contact">Contact</a></li>
-        </ul>
-        <div
-          className={`burger-button ${active}`}
-          onClick={handlerBurger} >
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-      </nav>
-
+    <header className='header__container main__container' >
       <img
-        className='header-logo'
-        src={logo} alt="ThomasJODT Logo" />
-
-      <div className='header-base' >
-        <p>Learn more about me</p>
-      </div>
+        className='profile__image main__image'
+        src={require('../assets/images/me.jpg')}
+        alt='Picture of me' />
+      <article className='profile__info' >
+        <p className='profile__greeting' >Hi, I am</p>
+        <h1 className='profile__name' >Orlando Díaz Torrealva</h1>
+        <p className='profile__greeting' >a Web Developer</p>
+      </article>
+      <section className='buttons__container' >
+        <Link
+          className='button__main header__button'
+          to='/about-me' >
+            Let's talk
+        </Link>
+        <a
+          className='button__second header__button'
+          href='/' >
+            Download CV
+        </a>
+      </section>
     </header>
   )
 }

@@ -1,1 +1,63 @@
-@import './main.css'
+.burger-button {
+  left:             0;
+  top:              0;
+  width:            72px;
+  height:           72px;
+  font-size:        48px;
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
+  cursor:           pointer;
+  position:         fixed;
+  border-radius:    0 0 48px 0;
+  background-color: var(--space-cadet);
+}
+.burger-button svg {
+  fill:             var(--ghost-white);
+}
+.side-nav {
+  top:              0;
+  z-index:          5;
+  height:           100vh;
+  width:            220px;
+  font-size:        2rem;
+  display:          flex;
+  text-align:       center;
+  align-items:      stretch;
+  justify-content:  center;
+  flex-direction:   column;
+  position:         fixed;
+  background-color: var(--space-cadet);
+  transform:        translateX(-100%);
+  transition:       .4s ease;
+  box-shadow: 4px 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.side-nav--active {
+  transform:        translateX(0);
+}
+.side-nav__button {
+  right:            12px;
+  top:              12px;
+  width:            48px;
+  height:           48px;
+  font-size:        48px;
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
+  cursor:           pointer;
+  position:         absolute;
+  color:            var(--ghost-white);
+  background-color: transparent;
+}
+.side-nav__button svg {
+  fill:             var(--ghost-white);
+}
+.side-nav__link {
+  line-height:      48px;
+  display:          block;
+  color:            var(--ghost-white);
+  transition:       .1s ease;
+}
+.side-nav__link:hover {
+  background-color: var(--ultramarine-blue);
+}

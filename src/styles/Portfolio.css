@@ -1,29 +1,40 @@
-@import url(@styles/main.css);
-
-.portfolio-title {
-  font-size:        3rem;
-  font-weight:      bold;
-  text-transform:   uppercase;
+.projects__grid::-webkit-scrollbar-thumb {
+  background-color: var(--space-cadet);
+  border-radius: 4px;
 }
-.projects-layout {
-  width:            75%;
-  padding:          8px;
-  border-radius:    32px;
-  display:          flex;
-  flex-direction:   column;
-  justify-content:  center;
+.projects__grid::-webkit-scrollbar-thumb:hover {
+  background-color: var(--ultramarine-blue);
+}
+.projects__grid::-webkit-scrollbar {
+  height: 8px;
+  border-radius: 3px;
+  background-color: var(--oxford-blue);
+}
+.portfolio__title {
+  font-size:          3.2rem;
+  padding-top:        32px;
+  margin-bottom:      42px;
+  text-align:         center;
+  color:              var(--ultramarine-blue);
+}
+.portfolio__image {
+  width:              100%;
+  object-fit:         cover;
+}
+.projects__grid {
+  gap:              24px;
+  display:          grid;
+  overflow-x:       auto;
+  grid-auto-flow:   column;
+  padding:          0 24px;
   margin:           0 auto;
-  background:     rgba(34,34,34, .5);
 }
 
-@media screen and (min-width: 700px) {
-  .projects-layout {
-    gap:              24px;
-    padding:          24px;
-    max-width:        1000px;
-    flex-direction:   row;
-    flex-wrap:        wrap;
-    justify-content:  center;
-    align-items:      center;
+@media screen and (min-width: 1000px) {
+  .projects__grid {
+    max-width:              1200px;
+    justify-content:        center;
+    grid-auto-flow:         row;
+    grid-template-columns:  repeat(4, 1fr);
   }
 }

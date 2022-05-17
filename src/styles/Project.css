@@ -1,56 +1,29 @@
-@import url(./main.css);
-
-.project-container {
-  width:            90%;
-  height:           200px;
-  margin:           24px auto;
-  border-radius:    12px;
-  display:          flex;
-  font-weight:      bold;
+.project__container {
+  display:          block;
+  width:            200px;
+  height:           240px;
+  border-radius:    16px;
   overflow:         hidden;
+  
+  margin:           0 auto;
+  margin-bottom:           24px;
+}
+.project__title {
+  height:           40px;
+  display:          flex;
   align-items:      center;
-  justify-content:  stretch;
-  color:            var(--pure-white);
-  background:       var(--soft-black);
-
-  flex-direction: column;
+  justify-content:  center;
+  background-color: var(--space-cadet);
+  transition:       .4s ease;
 }
-
-.project-image {
-  height:     calc(100% - 32px);
-  width:      100%;
-  display:    block;
+.project__title span {
+  font-size:        1.8rem;
+  color:            var(--ghost-white);
 }
-.project-name {
-  height: 50px;
-  width: 100%;
-  text-align: center;
-  height: 32px;
+.project__image {
+  text-align:       center;
+  color:            var(--ghost-white);
 }
-
-.project-container:hover .project-name {
-  transition: all .4s ease;
-  color:      var(--primary-color);
-  transform: translateX(0);
-
-}
-
-@media screen and (min-width: 500px) {
-  .project-container {
-    width: 75%;
-    height: 250px;
-    max-width: 600px;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .project-container {
-    margin:         0;
-    width:          300px;
-    height:         100%;
-  }
-  .project-image {
-    width:    300px;
-    height:   300px;
-  }
+.project__container:hover .project__title {
+  background-color: var(--ultramarine-blue);
 }

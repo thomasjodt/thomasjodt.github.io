@@ -1,90 +1,26 @@
-@import url(./main.css);
-
-#About {
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-}
-.about-title {
-  font-weight:      500;
-  text-decoration:  underline;
-  text-transform:   uppercase;
-
-}
-.card-info {
-  width:            90%;
-  padding:          32px;
-  border-radius:    24px;
-  margin:           0 auto;
-  background-color: rgba(34,34,34,.75);
+.about__title {
   text-align:       center;
-  position:         relative;
-}
-.card-info img {
-  border-radius: 50%;
-  margin-bottom: 36px;
-}
-.card-info h3 {
-  margin-bottom:  24px;
-  font-weight:    bold;
-}
-.card-info p {
-  text-align:     justify;
-  font-size:      1.8rem;
-  margin-bottom:  32px;
-}
-.info-about-me {
+  font-size:        3.2rem;
+  margin-top:       24px;
   margin-bottom:    48px;
-  display:          flex;
-  align-items:      center;
-  flex-direction:   column;
-  justify-content:  center;
+  color:            var(--ultramarine-blue);
 }
-.skills-container {
+.about__content {
+  font-size:        1.6rem;
+  font-weight:      lighter;
+  text-align:       justify;
+  color:            var(--ghost-white);
+}
+.skills__container {
   gap:              24px;
+  width:            100%;
+  margin-top:       100px;
+  padding:          24px;
+  border-radius:    16px;
   display:          flex;
   flex-wrap:        wrap;
+  margin:           0 auto;
+  align-items:      center;
   justify-content:  center;
-}
-
-@media screen and (min-width: 500px) {
-  .card-info {
-    width:      75%;
-    padding:    24px;
-    max-width:  600px;
-  }
-  .card-info > img {
-    width: 75%;
-    margin: 0 auto 36px;
-  }
-  .card-info h3 {
-    font-size: 2.2rem;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .card-info {
-    width: 90%;
-    max-width: 1000px;
-  }
-  .info-about-me {
-    gap:              10%;
-    padding:          24px;
-    flex-direction:   row;
-    align-items:      center;
-    justify-content:  space-around;
-  }
-  .info-container {
-    margin-bottom: 36px;
-  }
-  .card-info > img {
-    margin:   0;
-    padding:  12px;
-    height:   250px;
-    width:    250px;
-  }
-  .btn {
-    position: absolute;
-    bottom: 12px;
-  }
+  border:           2px solid var(--ultramarine-blue);
 }

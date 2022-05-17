@@ -1,67 +1,55 @@
-import '@styles/Contact.css'
+import '../styles/Contact.css'
+import '../assets/info'
 import { socialMedia } from '../assets/info'
-import ContactLink from './ContactLink'
+import Links from './Links'
 
 export default function Contact() {
   return (
-    <section id='Contact' >
-      <h2 className='contact-title' >Contact me</h2>
-
-      <form
-        className='contact-form'
-        action="https://formsubmit.co/jodt5200@gmail.com"
-        method="POST" >
-
-          <label htmlFor="name">
-            Name:
-            <input
-              className='textfield'
-              type="text"
-              name="name"
-              id="name"
+    <>
+      <div className='main__container' >
+        <h2 className='contact__title' >Contact me</h2>
+        <form className='contact__form' >
+          <label
+            className='contact__name contact__label'>
+            Name
+            <input 
+              className='contact__input'
               placeholder='Name' />
           </label>
-
-          <label htmlFor="email">
-            Email:
-            <input
-              className='textfield'
-            type="email"
-            name="email"
-            id="email"
-            placeholder='Email' />
+          <label className='contact__email contact__label' >
+            Email
+            <input 
+              className='contact__input'
+              placeholder='Email' />
           </label>
-
-          <label htmlFor="message">
-            Message:
-            <textarea
-              className='textfield'
-              name="message"
-              id="message"
-              cols="30"
-              placeholder='Type your message...'
-              rows="10" />
+          <label className='contact__message contact__label' >
+            Message
+            <textarea 
+              className='contact__input contact__message'
+              placeholder='Type your message...' >
+            </textarea>
           </label>
-          <button className='contact-button' >Send</button>
-
-      </form>
-      <footer className='footer' >
-        <ul className='contact-list' >
-          
-          {socialMedia.map(item => (
-            <ContactLink
-              url={item.url}
-              name={item.name} />
-              
-          ))}
-
-        </ul>
-        <a className='footer-logo' href="#Home">
+          <button className='contact__button' >send</button>
+        </form>
+      </div>
+      <footer className='contact__footer' >
+        <div className='footer__left' >
+          <ul>
+            {socialMedia.map(e => (
+              <Links
+              url={e.url}
+              key={e.name}
+                name={e.name} />
+            ))}
+          </ul>
+        </div>
+        <div className='footer__right' >
           <img
-            src={require('../assets/images/icon.png')}
-            alt="ThomasJODT Logo" />
-        </a>
+            className='footer__image'
+            alt="ThomasJODT's Logo"
+            src={require(`../assets/images/icon.png`)} />
+        </div>
       </footer>
-    </section>
+    </>
   )
 }

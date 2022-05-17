@@ -1,7 +1,7 @@
 export const skills = [
   { name: 'HTML', icon: 'html.svg' },
   { name: 'CSS', icon: 'css.svg' },
-  { name: 'JavaScript', icon: 'js.svg' },
+  { name: 'JavaScript', icon: 'javascript.svg' },
   { name: 'GIT', icon: 'git.svg' },
   { name: 'Webpack', icon: 'webpack.svg' },
   { name: 'React', icon: 'react.svg' },
@@ -30,7 +30,7 @@ export const projects = [
   {
     name: 'Rick & Morty Visualizer',
     url: 'https://ricknmortyviz.netlify.app/',
-    image: 'ricknmortyviz.jpg'
+    image: 'ricknmortyviz.png'
   }
 ]
 export const socialMedia = [
