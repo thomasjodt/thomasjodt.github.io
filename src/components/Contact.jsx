@@ -8,28 +8,43 @@ export default function Contact() {
     <>
       <div className='main__container' >
         <h2 className='contact__title' >Contact me</h2>
-        <form className='contact__form' >
+        <form
+          action='https://formsubmit.co/jodt5200@gmail.com'
+          method='POST'
+          className='contact__form' >
           <label
             className='contact__name contact__label'>
             Name
-            <input 
+            <input
+              type='text'
+              name='name'
               className='contact__input'
-              placeholder='Name' />
+              placeholder='Name'
+              required />
           </label>
           <label className='contact__email contact__label' >
             Email
-            <input 
+            <input
+              type='email'
+              name='email'
               className='contact__input'
-              placeholder='Email' />
+              placeholder='Email'
+              required />
           </label>
           <label className='contact__message contact__label' >
             Message
-            <textarea 
+            <textarea
+              name='message'
               className='contact__input contact__message'
-              placeholder='Type your message...' >
+              placeholder='Type your message...'
+              required >
             </textarea>
           </label>
-          <button className='contact__button' >send</button>
+          <button
+            className='contact__button'
+            type='submit' >
+              send
+          </button>
         </form>
       </div>
       <footer className='contact__footer' >
