@@ -3,9 +3,9 @@ import '../styles/Home.css'
 
 export default function Home() {
   return (
-    <header className='header__container' >
+    <header className='header__container main__container' >
       <img
-        className='profile__image'
+        className='profile__image main__image'
         src={require('../assets/images/me.jpg')}
         alt='Picture of me' />
       <article className='profile__info' >
