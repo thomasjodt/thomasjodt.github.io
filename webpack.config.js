@@ -44,6 +44,7 @@ module.exports = (argv) => {
       output: {
         filename: 'main.[contenthash].js',
         path: path.resolve(__dirname, 'build'),
+        publicPath: '/',
         assetModuleFilename: 'images/[name][hash][ext][query]',
         clean: true
       },
@@ -95,7 +96,9 @@ module.exports = (argv) => {
         static: { directory: path.join(__dirname, 'build') },
         open: true,
         port: 3000,
-        compress: true
+        compress: true,
+        historyApiFallback: true,
+        client: { overlay: true }
       },
       devtool: 'source-map'
     }

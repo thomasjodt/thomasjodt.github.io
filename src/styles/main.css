@@ -4,19 +4,28 @@
   --oxford-blue:        #02182B;
   --space-cadet:        #21275B;
   --ultramarine-blue:   #4361EE;
+  --manatee:            #9999A1;    
 }
 * {
-  margin:           0;
-  padding:          0;
-  border:           none;
-  outline:          none;
-  box-sizing:       border-box;
-  list-style:       none;
-  text-decoration:  none;
-  color:          #111;
+  margin:                 0;
+  padding:                0;
+  border:                 none;
+  outline:                none;
+  list-style:             none;
+  text-decoration:        none;
+  box-sizing:             border-box;
+  color:                #111;
 }
 html {
-  font-family:      'Outfit', sans-serif;
-  scroll-behavior:  smooth;
-  font-size:        62.5%;
+  font-size:          62.5%;
+  scroll-behavior:    smooth;
+  font-family:        'Outfit', sans-serif;
+}
+body {
+  font-size:          1.6rem;
+  background-color:   var(--oxford-blue);
+}
+img {
+  display:            block;
+  max-width:          100%;
 }
