@@ -6,7 +6,7 @@ import Links from './Links'
 export default function Contact() {
   return (
     <>
-      <div className='main__container' >
+      <div className='main__container contact__container' >
         <h2 className='contact__title' >Contact me</h2>
         <form
           action='https://formsubmit.co/jodt5200@gmail.com'
