@@ -20,8 +20,8 @@ export default function Home() {
             Let's talk
         </Link>
         <a
-          className='button__second header__button'
-          href='/' >
+          href='https://drive.google.com/u/0/uc?id=1w917pr1Pioh2pJqpQjmkSAY1Tf9DLZut&export=download'
+          className='button__second header__button'>
             Download CV
         </a>
       </section>
