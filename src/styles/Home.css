@@ -8,10 +8,7 @@
   margin-bottom:  24px;
   padding:        24px;
   border-radius:  24px;
-  overflow:       hidden;
-  border:         2px solid var(--ultramarine-blue);
-
-  
+  border:         2px solid var(--ultramarine-blue); 
 }
 .main__image {
   width:          75%;

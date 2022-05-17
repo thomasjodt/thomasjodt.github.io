@@ -1,0 +1,29 @@
+.project__container {
+  display:          block;
+  width:            200px;
+  height:           240px;
+  border-radius:    16px;
+  overflow:         hidden;
+  
+  margin:           0 auto;
+  margin-bottom:           24px;
+}
+.project__title {
+  height:           40px;
+  display:          flex;
+  align-items:      center;
+  justify-content:  center;
+  background-color: var(--space-cadet);
+  transition:       .4s ease;
+}
+.project__title span {
+  font-size:        1.8rem;
+  color:            var(--ghost-white);
+}
+.project__image {
+  text-align:       center;
+  color:            var(--ghost-white);
+}
+.project__container:hover .project__title {
+  background-color: var(--ultramarine-blue);
+}
