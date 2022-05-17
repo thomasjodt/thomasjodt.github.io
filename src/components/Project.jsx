@@ -11,7 +11,7 @@ export default function Project({ url, name, image }) {
       </p>
       <img
         className='project__image'
-        src={require(`../assets/images/${image}`)}
+        src={require(`../assets/images/projects/${image}`)}
         alt={`Picture of ${name}`} />
     </a>
   )
