@@ -48,22 +48,16 @@ export default function Contact() {
         </form>
       </div>
       <footer className='contact__footer' >
-        <div className='footer__left' >
-          <ul>
+          <ul className='footer__list'>
             {socialMedia.map(e => (
               <Links
-              url={e.url}
-              key={e.name}
-                name={e.name} />
+                url={e.url}
+                key={e.name}
+                path={e.path}
+                name={e.name}
+                viewBox={e.viewBox} />
             ))}
           </ul>
-        </div>
-        <div className='footer__right' >
-          <img
-            className='footer__image'
-            alt="ThomasJODT's Logo"
-            src={require(`../assets/images/icon.png`)} />
-        </div>
       </footer>
     </>
   )

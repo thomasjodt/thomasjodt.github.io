@@ -1,12 +1,30 @@
-.footer__list {
-  width:          100%;
-  padding:        4px;
-}
 .footer__link {
-  font-size:      1.6rem;
-  transition:     .4s ease;
+  font-size:        1.6rem;
+  transition:       .4s ease;
+}
+.footer__link:hover .footer__name {
+  color:          var(--ultramarine-blue);
+}
+.footer__name {
+  font-weight:    600;
+  display:        none;
   color:          var(--ghost-white);
 }
-.footer__link:hover {
-  color:          var(--ultramarine-blue);
+.link__icon {
+  height:         48px;
+  width:          48px;
+  fill:           var(--ghost-white);
+}
+.link__icon:hover {
+  fill:           var(--ultramarine-blue);
+}
+
+@media screen and (min-width: 700px) {
+  .footer__name {
+    display: inline-block;
+    padding: 12px;
+  }
+  .link__icon {
+    display: none;
+  }
 }
