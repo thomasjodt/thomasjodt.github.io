@@ -1,26 +1,30 @@
+.about__logo {
+  width:            75%;
+  min-width:        200px;
+  max-width:        375px;
+  margin-top:       48px;
+}
 .about__title {
-  text-align:       center;
   font-size:        3.2rem;
-  margin-top:       24px;
-  margin-bottom:    48px;
+  margin:           64px 0 48px;
   color:            var(--primary-color);
 }
-.about__content {
+.about__info {
+  max-width:        600px;
   font-size:        1.6rem;
-  font-weight:      lighter;
+  font-weight:      300;
   text-align:       justify;
   color:            var(--white);
 }
 .skills__container {
   gap:              24px;
-  width:            100%;
-  margin-top:       100px;
+  max-width:        600px;
   padding:          24px;
   border-radius:    16px;
+  border:           2px solid var(--primary-color);
+  
   display:          flex;
   flex-wrap:        wrap;
-  margin:           0 auto;
   align-items:      center;
   justify-content:  center;
-  border:           2px solid var(--primary-color);
 }

@@ -5,8 +5,8 @@
   border-radius:    16px;
   overflow:         hidden;
   
-  margin:           0 auto;
-  margin-bottom:           24px;
+  /* margin:           0 auto; */
+  /* margin-bottom:    12px; */
 }
 .project__title {
   height:           40px;
