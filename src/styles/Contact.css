@@ -1,5 +1,5 @@
 ::placeholder {
-  color:            var(--manatee);
+  color:            var(--gray);
   font-family:      Outfit, sans-serif;
 }
 .contact__form {
@@ -12,13 +12,13 @@
   font-size:        3.2rem;
   margin:           24px 0;
   text-align:       center;
-  color:            var(--ultramarine-blue);
+  color:            var(--primary-color);
 }
 .contact__label {
   width:            100%;
   display:          block;
   margin:           8px auto;
-  color:            var(--ghost-white);
+  color:            var(--white);
 }
 .contact__input {
   padding:          8px;
@@ -42,8 +42,8 @@
   font-weight:      500;
   border-radius:    16px;
   text-transform:   uppercase;
-  color:            var(--ghost-white);
-  background-color: var(--ultramarine-blue);
+  color:            var(--white);
+  background-color: var(--primary-color);
   font-family: Outfit, sans-serif;
 }
 .contact__footer {
@@ -54,7 +54,7 @@
   justify-content:  center;
   width:            fit-content;
   margin:           0 auto 24px;
-  border:           2px solid var(--ultramarine-blue);
+  border:           2px solid var(--primary-color);
 }
 .footer__list {
   gap:              8px;

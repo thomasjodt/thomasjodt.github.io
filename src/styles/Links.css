@@ -3,20 +3,20 @@
   transition:       .4s ease;
 }
 .footer__link:hover .footer__name {
-  color:          var(--ultramarine-blue);
+  color:          var(--primary-color);
 }
 .footer__name {
   font-weight:    600;
   display:        none;
-  color:          var(--ghost-white);
+  color:          var(--white);
 }
 .link__icon {
   height:         48px;
   width:          48px;
-  fill:           var(--ghost-white);
+  fill:           var(--white);
 }
 .link__icon:hover {
-  fill:           var(--ultramarine-blue);
+  fill:           var(--primary-color);
 }
 
 @media screen and (min-width: 700px) {

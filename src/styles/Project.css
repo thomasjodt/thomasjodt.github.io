@@ -18,12 +18,12 @@
 }
 .project__title span {
   font-size:        1.8rem;
-  color:            var(--ghost-white);
+  color:            var(--white);
 }
 .project__image {
   text-align:       center;
-  color:            var(--ghost-white);
+  color:            var(--white);
 }
 .project__container:hover .project__title {
-  background-color: var(--ultramarine-blue);
+  background-color: var(--primary-color);
 }

@@ -3,13 +3,13 @@
   font-size:        3.2rem;
   margin-top:       24px;
   margin-bottom:    48px;
-  color:            var(--ultramarine-blue);
+  color:            var(--primary-color);
 }
 .about__content {
   font-size:        1.6rem;
   font-weight:      lighter;
   text-align:       justify;
-  color:            var(--ghost-white);
+  color:            var(--white);
 }
 .skills__container {
   gap:              24px;
@@ -22,5 +22,5 @@
   margin:           0 auto;
   align-items:      center;
   justify-content:  center;
-  border:           2px solid var(--ultramarine-blue);
+  border:           2px solid var(--primary-color);
 }

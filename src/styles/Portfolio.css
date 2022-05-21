@@ -3,19 +3,19 @@
   border-radius: 4px;
 }
 .projects__grid::-webkit-scrollbar-thumb:hover {
-  background-color: var(--ultramarine-blue);
+  background-color: var(--primary-color);
 }
 .projects__grid::-webkit-scrollbar {
   height: 8px;
   border-radius: 3px;
-  background-color: var(--oxford-blue);
+  background-color: var(--main-blue);
 }
 .portfolio__title {
   font-size:          3.2rem;
   padding-top:        32px;
   margin-bottom:      42px;
   text-align:         center;
-  color:              var(--ultramarine-blue);
+  color:              var(--primary-color);
 }
 .portfolio__image {
   width:              100%;

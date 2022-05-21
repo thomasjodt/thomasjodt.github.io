@@ -1,70 +1,53 @@
-.main__container {
-  width:          70%;
-  min-width:      272px;
-  max-width:      1200px;
-  min-height:     460px;
-  margin:         0 auto;
-  margin-top:     100px;
-  margin-bottom:  24px;
-  padding:        24px;
-  border-radius:  24px;
-  border:         2px solid var(--ultramarine-blue); 
-}
-.main__image {
+.home__image {
   width:          75%;
-  min-width:      150px;
   max-width:      300px;
-  margin:         0 auto;
   object-fit:     contain;
   margin-bottom:  24px;
   border-radius:  50% 50% 0 0;
 }
-.profile__info {
+.home__info {
   margin-bottom:  32px;
   text-align:     center;
 }
-.profile__greeting {
+.home__caption, .home__description {
+  font-weight:    500;
   font-size:      1.8rem;
-  color:          var(--manatee);
+  color:          var(--gray);
 }
-.profile__name {
-  font-size:      2rem;
+.home__title {
+  font-size:      3rem;
   font-weight:    500;
   margin:         4px;
-  color:          var(--ghost-white);
+  color:          var(--white);
 }
 .buttons__container {
-  gap:              24px;
-  margin:           0 auto;
+  gap:              8px;
   display:          flex;
-  justify-content:  center;
   align-items:      center;
+  justify-content:  center;
 }
-.header__button {
+.button {
   border-radius:  8px;
   height:         48px;
   line-height:    48px;
-  width:          120px;
+  width:          100px;
   font-size:      1.6rem;
   text-align:     center;
   transition:     all .4s;
 }
-.button__main {
-  background-color: var(--ultramarine-blue);
-  color:            var(--ghost-white);
+.primary__button {
+  color:            var(--white);
+  background-color: var(--primary-color);
 }
-.button__main:hover {
-  color:            var(--ultramarine-blue);
-  background-color: var(--ghost-white);
-}
-.button__second {
-  line-height:      44px;
+.second__button {
+  font-weight:      600;
+  line-height:      48px;
   font-size:        1.4rem;
-  color:            var(--ultramarine-blue);
-  border:           2px solid var(--ultramarine-blue);
+  color:            var(--blue-inactive);
+  background-color: var(--blue-active);
 }
-.button__second:hover {
-  background-color: var(--ghost-white);
-  border-color:     var(--ghost-white);
-  color:            var(--ultramarine-blue);
+.primary__button:hover, .second__button:hover {
+  color:            var(--primary-color);
+  border-color:     var(--white);
+  background-color: var(--white);
 }
