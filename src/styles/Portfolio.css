@@ -3,38 +3,30 @@
   border-radius: 4px;
 }
 .projects__grid::-webkit-scrollbar-thumb:hover {
-  background-color: var(--ultramarine-blue);
+  background-color: var(--primary-color);
 }
 .projects__grid::-webkit-scrollbar {
   height: 8px;
   border-radius: 3px;
-  background-color: var(--oxford-blue);
+  background-color: var(--main-blue);
 }
 .portfolio__title {
   font-size:          3.2rem;
   padding-top:        32px;
-  margin-bottom:      42px;
+  margin:             32px 0 48px;
   text-align:         center;
-  color:              var(--ultramarine-blue);
+  color:              var(--primary-color);
 }
 .portfolio__image {
   width:              100%;
   object-fit:         cover;
 }
 .projects__grid {
-  gap:              24px;
-  display:          grid;
+  gap:              12px;
   overflow-x:       auto;
-  grid-auto-flow:   column;
   padding:          0 24px;
-  margin:           0 auto;
-}
-
-@media screen and (min-width: 1000px) {
-  .projects__grid {
-    max-width:              1200px;
-    justify-content:        center;
-    grid-auto-flow:         row;
-    grid-template-columns:  repeat(4, 1fr);
-  }
+  
+  display:          flex;
+  flex-wrap:        wrap;
+  justify-content:  center;
 }

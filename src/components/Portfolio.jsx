@@ -1,11 +1,13 @@
 import '../styles/Portfolio.css'
-import Project from './Project'
 import '../assets/info'
+import MainContainer from './MainContainer'
+
+import Project      from './Project'
 import { projects } from '../assets/info'
 
 export default function Portfolio() {
   return (
-    <div className='main__container' >
+    <MainContainer >
       <h2 className='portfolio__title' >My projects</h2>
       <section className='projects__grid' >
         {projects.map(e => (
@@ -16,6 +18,6 @@ export default function Portfolio() {
             key={e.name} />
         ))}
       </section>
-    </div>
+    </MainContainer>
   )
 }

@@ -1,10 +1,14 @@
 :root {
-  --ghost-white:        #F0EFF4;
-  --smoky-black:        #161616;
-  --oxford-blue:        #02182B;
+  --gray:               #9999A1;  
+  --white:              #F0EFF4;
+  --black:              #161616;
+  --main-blue:          #03203A;
+  --blue-active:        #053661;
+  --blue-inactive:      #02111D;
+  --primary-color:      #4361EE;
+  --shadow-color:       #00000033;
+
   --space-cadet:        #21275B;
-  --ultramarine-blue:   #4361EE;
-  --manatee:            #9999A1;    
 }
 * {
   margin:                 0;
@@ -14,18 +18,34 @@
   list-style:             none;
   text-decoration:        none;
   box-sizing:             border-box;
-  color:                #111;
+  color:                  var(--black);
+  font-family:            'Outfit', sans-serif;
 }
 html {
-  font-size:          62.5%;
-  scroll-behavior:    smooth;
-  font-family:        'Outfit', sans-serif;
+  font-size:              62.5%;
+  scroll-behavior:        smooth;
 }
 body {
-  font-size:          1.6rem;
-  background-color:   var(--oxford-blue);
+  min-height:             100vh;
+  font-size:              1.6rem;
+  background-color:       var(--main-blue);
 }
 img {
-  display:            block;
-  max-width:          100%;
+  display:                block;
+  max-width:              100%;
+}
+#root {
+  min-height:             100vh;
+  padding-top:            64px;
+  display:                flex;
+  flex-wrap:              wrap;
+  align-items:            center;
+  justify-content:        center;
+}
+
+@media screen and (min-width: 768px) {
+  #root {
+    padding-top:  0;
+    padding-left: 64px;
+  }
 }

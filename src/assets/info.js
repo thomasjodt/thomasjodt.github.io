@@ -10,44 +10,31 @@ export const projects = [
   {
     name: 'Survey Form',
     url: 'https://codepen.io/thomasjodt/full/qBpKWOp',
-    image: 'surveyform.png'
+    image: 'https://i.ibb.co/KX8N0SF/surveyform.png'
   },
   {
     name: 'Documentation Page',
     url: 'https://codepen.io/thomasjodt/full/wvpXMRN',
-    image: 'documentation.png'
+    image: 'https://i.ibb.co/jgNP4vs/documentation.png'
   },
   {
     name: 'Tribute Page',
     url: 'https://codepen.io/thomasjodt/full/vYpRoxd',
-    image: 'tribute.png'
+    image: 'https://i.ibb.co/WfmFcCp/tribute.png'
   },
   {
     name: 'Doggos App',
     url: 'https://tom-doggos-app.netlify.app/',
-    image: 'doggos.png'
+    image: 'https://i.ibb.co/G0bYgSy/doggos.png'
   },
   {
     name: 'Rick & Morty Visualizer',
     url: 'https://ricknmortyviz.netlify.app/',
-    image: 'ricknmortyviz.png'
-  }
-]
-export const socialMedia = [
-  {
-    name: 'Facebook',
-    url: 'https://www.facebook.com/orlando.diaztorrealva/'
+    image: 'https://i.ibb.co/XbfdJZL/ricknmortyviz.png'
   },
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/JodtThomas'
-  },
-  {
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/javier-orlando-diaz-torrealva-83b00b16a/'
-  },
-  {
-    name: 'Github',
-    url: 'https://github.com/thomasjodt'
+    name: 'Animations',
+    url: 'https://lego-animations.netlify.app/',
+    image: 'https://i.ibb.co/KqZBh76/lego-animations.png'
   }
 ]

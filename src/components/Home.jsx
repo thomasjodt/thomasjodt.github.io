@@ -1,30 +1,32 @@
 import { Link } from 'react-router-dom'
 import '../styles/Home.css'
+import MainContainer from './MainContainer'
+import image from '../assets/images/me.jpg'
 
 export default function Home() {
   return (
-    <header className='header__container main__container' >
+    <MainContainer home={'home__container'} >
       <img
-        className='profile__image main__image'
-        src={require('../assets/images/me.jpg')}
+        className='home__image'
+        src={image}
         alt='Picture of me' />
-      <article className='profile__info' >
-        <p className='profile__greeting' >Hi, I am</p>
-        <h1 className='profile__name' >Orlando Díaz Torrealva</h1>
-        <p className='profile__greeting' >a Web Developer</p>
+      <article className='home__info' >
+        <p className='home__caption' >Hi, I am</p>
+        <h1 className='home__title' >Orlando Díaz Torrealva</h1>
+        <p className='home__description' >a Web Developer</p>
       </article>
       <section className='buttons__container' >
         <Link
-          className='button__main header__button'
+          className='primary__button button'
           to='/about-me' >
             Let's talk
         </Link>
         <a
           href='https://drive.google.com/u/0/uc?id=1w917pr1Pioh2pJqpQjmkSAY1Tf9DLZut&export=download'
-          className='button__second header__button'>
+          className='second__button button'>
             Download CV
         </a>
       </section>
-    </header>
+    </MainContainer>
   )
 }
