@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import './styles/main.css'
 import './styles/outfit.css'
+import './styles/material.css'
 
 createRoot(document.getElementById('root'))
 .render(

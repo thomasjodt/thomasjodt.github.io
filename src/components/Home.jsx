@@ -5,7 +5,7 @@ import image from '../assets/images/me.jpg'
 
 export default function Home() {
   return (
-    <MainContainer>
+    <MainContainer home={'home__container'} >
       <img
         className='home__image'
         src={image}

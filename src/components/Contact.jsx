@@ -1,7 +1,7 @@
 import '../styles/Contact.css'
 import '../assets/info'
-import { socialMedia } from '../assets/info'
-import Links from './Links'
+
+import { FaFacebookMessenger, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -46,19 +46,35 @@ export default function Contact() {
               send
           </button>
         </form>
-      </div>
-      <footer className='contact__footer' >
-          <ul className='footer__list'>
-            {socialMedia.map(e => (
-              <Links
-                url={e.url}
-                key={e.name}
-                path={e.path}
-                name={e.name}
-                viewBox={e.viewBox} />
-            ))}
+        <section className='links__container' >
+          <ul className='links__list' >
+
+            <a
+              target='_blank'
+              className='link messenger__icon'
+              href='https://m.me/orlando.diaztorrealva' >
+            <FaFacebookMessenger className='link__icon' />
+            <span className='link__caption'>Messenger</span>
+            </a>
+
+            <a
+              target='_blank'
+              className='link github__icon'
+              href='https://github.com/thomasjodt' >
+            <FaGithub className='link__icon' />
+            <span className='link__caption'>Github</span>
+            </a>
+
+            <a
+              target='_blank'
+              className='link linkedin__icon'
+              href='https://www.linkedin.com/in/javier-orlando-diaz-torrealva-83b00b16a/' >
+            <FaLinkedin className='link__icon' />
+            <span className='link__caption'>LinkedIn</span>
+            </a>
           </ul>
-      </footer>
+        </section>
+      </div>
     </>
   )
 }

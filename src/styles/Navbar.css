@@ -11,19 +11,9 @@
   border-bottom:    1px solid var(--blue-active);
   background-color: var(--main-blue);
 }
-.navbar a {
-  width:            64px;
-  height:           64px;
-  display:          flex;
-  align-items:      center;
-  justify-content:  center;
-}
-.navbar__button {
-  fill:             var(--blue-inactive);
-  filter:           url(#inset-shadow);
-}
-.navbar__button:hover {
-  fill:             var(--blue-active);
+
+.material-symbols-rounded.active {
+  color: var(--blue-active);
 }
 
 @media screen and (min-width: 768px) {
