@@ -4,9 +4,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin')
 
-const htmlRules = { 
-  test: /\.html$/, 
-  use: ['html-loader'] 
+const htmlRules = {
+  test: /\.html$/,
+  use: ['html-loader']
 }
 const styleRules = {
   test: /\.(sa|sc|c)ss$/,
@@ -16,7 +16,6 @@ const jsRules = {
   test: /\.(m?js|jsx)$/,
   exclude: /node_modules/,
   loader: 'babel-loader',
-  
 }
 const imageRules = {
   test: /\.(jpe?g|png|gif|svg)$/,
@@ -35,7 +34,6 @@ const rules = [htmlRules, styleRules, jsRules, imageRules, fontRules]
 module.exports = (env, argv) => {
   const { mode } = argv
   const isProduction = mode === 'production'
-  
   if (isProduction) {
 
     return {

@@ -6,7 +6,7 @@ import Contact    from './components/Contact'
 import NotFound   from './components/NotFound'
 
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
 import './styles/main.css'
 import './styles/outfit.css'
@@ -14,7 +14,7 @@ import './styles/material.css'
 
 createRoot(document.getElementById('root'))
 .render(
-  <BrowserRouter>
+  <Router>
     <App>
       <Routes>
       <Route path='/'           element={<Home />} />
@@ -24,5 +24,5 @@ createRoot(document.getElementById('root'))
       <Route path='*'           element={<NotFound />} />
       </Routes>
     </App>
-  </BrowserRouter>
+  </Router>
 )
