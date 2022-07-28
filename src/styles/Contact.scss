@@ -62,6 +62,7 @@
 .link {
   display: inline-block;
   margin: 0 8px;
+<<<<<<< HEAD
 
   &__icon {
     font-size: 36px;
@@ -71,6 +72,16 @@
     display: none;
     cursor: pointer;
   }
+=======
+}
+.link__icon {
+  font-size: 36px;
+  fill: var(--white);
+}
+.link__caption {
+  display: none;
+  cursor: pointer;
+>>>>>>> 1396fae6a1ece446c94146e1549bfe4b4529edb2
 }
 .link__icon:hover,
 .link__caption:hover {
