@@ -1,11 +1,12 @@
-import '../styles/Skills.css'
+import '../styles/Skills.scss'
 
-export default function Skills({ name, icon }) {
+export const Skills = ({ name, icon }) => {
   return (
-    <div className='skill__tile' >
+    <div className='skill__tile'>
       <img
-        src={require(`../assets/icons/${icon}`)}
-        alt={`Icon of ${name}`} />
+        src={`/icons/${icon}`}
+        alt={`Icon of ${name}`}
+      />
     </div>
   )
 }
