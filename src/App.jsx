@@ -1,12 +1,11 @@
-import './styles/App.css'
-import Navbar from './components/Navbar'
+import './styles/App.scss'
+import { Navbar } from './components/Navbar'
 
-export default function App({ children }) {
-  
+export const App = ({ children }) => {
   return (
     <>
       <Navbar />
-      { children }
+      {children}
     </>
   )
 }

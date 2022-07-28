@@ -1,41 +1,58 @@
 {
   "homepage": "https://thomasjodt.github.io",
   "name": "thomasjodt-portfolio",
+  "private": true,
+  "description": "Portfolio website for ThomasJODT",
   "version": "1.0.0",
-  "description": "",
-  "main": "src/main.js",
+  "main": "src/main.jsx",
+  "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "dev": "vite --host --open --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --open",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
-    "Webpack",
-    "JavaScript",
-    "React"
+    "webpack",
+    "javascript",
+    "react",
+    "standard"
   ],
-  "author": "Orlando Díaz jodt5200@gmail.com",
+  "author": "ThomasJODT <jodt5200@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.17.10",
-    "@babel/preset-env": "^7.17.10",
-    "@babel/preset-react": "^7.16.7",
-    "babel-loader": "^8.2.5",
-    "css-loader": "^6.7.1",
-    "css-minimizer-webpack-plugin": "^3.4.1",
-    "html-loader": "^3.1.0",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.6.0",
-    "react-router-dom": "^6.3.0",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.8.1"
-  },
   "dependencies": {
-    "gh-pages": "^3.2.3",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-icons": "^4.3.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-jsx": "^11.0.0",
+    "eslint-config-standard-react": "^11.0.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.1",
+    "gh-pages": "^4.0.0",
+    "sass": "^1.54.0",
+    "standard": "^17.0.0",
+    "vite": "^3.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard",
+      "standard-jsx",
+      "standard-react"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off",
+      "react/prop-types": "off"
+    }
   }
 }

@@ -1,0 +1,15 @@
+.skill__tile {
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 4px 4px 8px var(--shadow-color);
+  background-color: var(--blue-active);
+}
+.skill__tile img {
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
