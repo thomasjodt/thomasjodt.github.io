@@ -1,9 +1,9 @@
-import '../styles/MainContainer.css'
+import '../styles/MainContainer.scss'
 
-export default function MainContainer({ children, home }) {
+export const MainContainer = ({ children, home }) => {
   return (
-    <section className={`main__container ${ home }`} >
-      { children }
+    <section className={`main__container ${home}`}>
+      {children}
     </section>
   )
 }

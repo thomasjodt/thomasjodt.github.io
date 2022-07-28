@@ -1,19 +1,20 @@
-import '../styles/Project.css'
+import '../styles/Project.scss'
 
-export default function Project({ url, name, image }) {
+export const Project = ({ url, name, image }) => {
   return (
     <a
       target='_blank'
       href={url}
-      className='project__container' >
-      <p className='project__title' >
+      className='project__container' rel='noreferrer'
+    >
+      <p className='project__title'>
         <span>{name}</span>
       </p>
       <img
         className='project__image'
-        src={image}
-        // src={require(`../assets/images/projects/${image}`)}
-        alt={`Picture of ${name}`} />
+        src={`/images/${image}`}
+        alt={`Picture of ${name}`}
+      />
     </a>
   )
 }
