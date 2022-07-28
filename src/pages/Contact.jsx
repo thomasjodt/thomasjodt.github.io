@@ -1,7 +1,7 @@
 import '../styles/Contact.scss'
 import '../assets/info'
 
-// import { FaFacebookMessenger, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaFacebookMessenger, FaLinkedin, FaGithub } from 'react-icons/fa'
 
 export const Contact = () => {
   return (
@@ -59,7 +59,11 @@ export const Contact = () => {
               className='link messenger__icon'
               href='https://m.me/orlando.diaztorrealva' rel='noreferrer'
             >
+<<<<<<< HEAD
+              <FaFacebookMessenger className='link__icon' />
+=======
               {/* <FaFacebookMessenger className='link__icon' /> */}
+>>>>>>> 1396fae6a1ece446c94146e1549bfe4b4529edb2
               <span className='link__caption'>Messenger</span>
             </a>
 
@@ -68,7 +72,11 @@ export const Contact = () => {
               className='link github__icon'
               href='https://github.com/thomasjodt' rel='noreferrer'
             >
+<<<<<<< HEAD
+              <FaGithub className='link__icon' />
+=======
               {/* <FaGithub className='link__icon' /> */}
+>>>>>>> 1396fae6a1ece446c94146e1549bfe4b4529edb2
               <span className='link__caption'>Github</span>
             </a>
 
@@ -77,7 +85,11 @@ export const Contact = () => {
               className='link linkedin__icon'
               href='https://www.linkedin.com/in/javier-orlando-diaz-torrealva-83b00b16a/' rel='noreferrer'
             >
+<<<<<<< HEAD
+              <FaLinkedin className='link__icon' />
+=======
               {/* <FaLinkedin className='link__icon' /> */}
+>>>>>>> 1396fae6a1ece446c94146e1549bfe4b4529edb2
               <span className='link__caption'>LinkedIn</span>
             </a>
           </ul>
