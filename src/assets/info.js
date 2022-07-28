@@ -29,7 +29,7 @@ export const projects = [
   },
   {
     name: 'Rick & Morty Visualizer',
-    url: 'https://ricknmortyviz.netlify.app/',
+    url: 'https://tom-rick-and-morty.netlify.app/',
     image: 'https://i.ibb.co/XbfdJZL/ricknmortyviz.png'
   },
   {
