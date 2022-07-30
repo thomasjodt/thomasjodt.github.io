@@ -30,7 +30,11 @@
       font-size: 1.2rem;
       color: $gray;
     }
-    &:hover,
+    &:hover span,
+    &:hover svg {
+      color: $primary-color;
+      fill: $primary-color;
+    }
     &.active {
       border-bottom: 4px solid $primary-color;
     }
