@@ -9,7 +9,7 @@ export const About = () => {
     <MainContainer>
       <img
         className='about__logo'
-        src='/images/logo.png'
+        src='/images/Logo.png'
       />
       <h2 className='about__title'>About me</h2>
       <p className='about__info'>My name is Orlando Díaz Torrealva (Thomas). I am 22 years old and i consider myself a persevering person and self thaught. Although i still do not hace experience, i have the necessary knowledge to work in the area of Web Development. My favorite technology to develop is React.
