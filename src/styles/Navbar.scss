@@ -1,3 +1,5 @@
+@import './global.scss';
+
 .navbar {
   top: 0;
   left: 0;
@@ -8,12 +10,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid var(--blue-active);
-  background-color: var(--main-blue);
+  border-bottom: 1px solid $blue-active;
+  background-color: $main-blue;
 }
 
-.material-symbols-rounded.active {
-  color: var(--blue-active);
+.material-symbols-rounded {
+  transition: 0.4s ease;
+  color: $blue-inactive;
+
+  &.active,
+  &:hover {
+    color: $blue-active;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -25,6 +33,6 @@
     position: fixed;
     flex-direction: column;
     border-bottom: none;
-    border-right: 1px solid var(--blue-active);
+    border-right: 1px solid $blue-active;
   }
 }

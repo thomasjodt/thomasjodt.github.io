@@ -1,29 +1,31 @@
-.project__container {
-  display: block;
-  width: 200px;
-  height: 240px;
-  border-radius: 16px;
-  overflow: hidden;
+@import './global.scss';
 
-  /* margin:           0 auto; */
-  /* margin-bottom:    12px; */
-}
-.project__title {
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--space-cadet);
-  transition: 0.4s ease;
-}
-.project__title span {
-  font-size: 1.8rem;
-  color: var(--white);
-}
-.project__image {
-  text-align: center;
-  color: var(--white);
-}
-.project__container:hover .project__title {
-  background-color: var(--primary-color);
+.project {
+  &__container {
+    display: block;
+    width: 200px;
+    height: 240px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  &__title {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $space-cadet;
+    transition: 0.4s ease;
+
+    & span {
+      font-size: 1.8rem;
+      color: $white;
+    }
+  }
+  &__image {
+    text-align: center;
+    color: $white;
+  }
+  &__container:hover .project__title {
+    background-color: $primary-color;
+  }
 }

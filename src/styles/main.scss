@@ -1,15 +1,5 @@
-:root {
-  --gray: #9999a1;
-  --white: #f0eff4;
-  --black: #161616;
-  --main-blue: #03203a;
-  --blue-active: #053661;
-  --blue-inactive: #02111d;
-  --primary-color: #4361ee;
-  --shadow-color: #00000033;
+@import './global.scss';
 
-  --space-cadet: #21275b;
-}
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +8,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  color: var(--black);
+  color: $black;
   font-family: 'Outfit', sans-serif;
 }
 html {
@@ -28,7 +18,7 @@ html {
 body {
   min-height: 100vh;
   font-size: 1.6rem;
-  background-color: var(--main-blue);
+  background-color: $main-blue;
 }
 img {
   display: block;
