@@ -6,29 +6,29 @@ export const Navbar = () => {
     <nav className='navbar'>
 
       <Link
-        className='home__button material-symbols-rounded'
+        className='material-symbols-rounded'
         to='/'
       >
         home
       </Link>
 
       <Link
-        className='about__button material-symbols-rounded'
-        to='about-me'
+        className='material-symbols-rounded'
+        to='about'
       >
         person
       </Link>
 
       <Link
-        className='portfolio__button material-symbols-rounded'
+        className='material-symbols-rounded'
         to='portfolio'
       >
         work
       </Link>
 
       <Link
-        className='mail__button material-symbols-rounded'
-        to='contact-me'
+        className='material-symbols-rounded'
+        to='contact'
       >
         mail
       </Link>

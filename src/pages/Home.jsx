@@ -23,7 +23,7 @@ export const Home = () => {
           Let's talk
         </Link>
         <a
-          href='https://drive.google.com/u/0/uc?id=1w917pr1Pioh2pJqpQjmkSAY1Tf9DLZut&export=download'
+          href='https://drive.google.com/u/0/uc?id=1n9uUaOPHdaJB5HsbSWBqIHUikVx5kEuE&export=download'
           className='second__button button'
         >
           Download CV
