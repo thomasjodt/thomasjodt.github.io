@@ -3,29 +3,45 @@
 .project {
   &__container {
     display: block;
-    width: 200px;
-    height: 240px;
-    border-radius: 16px;
+    width: 100%;
+    min-width: 200px;
     overflow: hidden;
+    position: relative;
+    border-radius: 10px;
   }
-  &__title {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $space-cadet;
-    transition: 0.4s ease;
+  &__content {
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px 20px 0 0;
+    transform: translateY(100%);
+    transition: all 0.4s;
+    background-color: $primary-color;
 
-    & span {
-      font-size: 1.8rem;
+    & * {
       color: $white;
     }
+
+    .project__container:hover & {
+      transform: translateY(0);
+      box-shadow: 0 -2px 4px rgba($black, 0.4);
+    }
   }
-  &__image {
+  &__title {
     text-align: center;
-    color: $white;
   }
-  &__container:hover .project__title {
-    background-color: $primary-color;
+  &__tags {
+    margin: 8px 0;
+  }
+  &__content {
+    padding: 4px;
+  }
+}
+.main__container.portfolio {
+  padding: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .main__container.portfolio {
+    padding: 24px;
   }
 }

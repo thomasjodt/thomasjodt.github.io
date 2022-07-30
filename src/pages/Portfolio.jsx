@@ -6,15 +6,17 @@ import { Project } from '../components/Project'
 
 export const Portfolio = () => {
   return (
-    <MainContainer>
+    <MainContainer home='portfolio'>
       <h2 className='portfolio__title'>My projects</h2>
       <section className='projects__grid'>
         {projects.map(e => (
           <Project
+            key={e.name}
             url={e.url}
             name={e.name}
             image={e.image}
-            key={e.name}
+            tags={e.tags}
+            description={e.description}
           />
         ))}
       </section>

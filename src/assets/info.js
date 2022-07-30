@@ -10,31 +10,43 @@ export const projects = [
   {
     name: 'Rick & Morty Visualizer',
     url: 'https://tom-rick-and-morty.netlify.app/',
-    image: 'rickandmorty.png'
+    image: 'rickandmorty.png',
+    description: 'A Rick and Morty characters visualizer with the rick and morty API.',
+    tags: ['react', 'api rest', 'javascript']
   },
   {
     name: 'Doggos App',
     url: 'https://tom-doggos-app.netlify.app/',
-    image: 'doggos.png'
+    image: 'doggos.png',
+    description: 'You can watch random dogs, set your favourites and delete them or upload your own photo.',
+    tags: ['react', 'api rest', 'javascript']
   },
   {
     name: 'Survey Form',
     url: 'https://codepen.io/thomasjodt/full/qBpKWOp',
-    image: 'surveyform.png'
+    image: 'surveyform.png',
+    description: 'Static page which is a simple non usable form, one of the projects of freeCodeCamp.',
+    tags: ['html', 'css']
   },
   {
     name: 'Documentation Page',
     url: 'https://codepen.io/thomasjodt/full/wvpXMRN',
-    image: 'documentation.png'
+    image: 'documentation.png',
+    description: 'A documentation page, one of the first projects of freeCodeCamp.',
+    tags: ['html', 'css']
   },
   {
     name: 'Tribute Page',
     url: 'https://codepen.io/thomasjodt/full/vYpRoxd',
-    image: 'tribute.png'
+    image: 'tribute.png',
+    description: 'Simple page which has a tribute for one character, one of the first project of freeCodeCamp.',
+    tags: ['html', 'css']
   },
   {
     name: 'Animations',
     url: 'https://lego-animations.netlify.app/',
-    image: 'lego-animations.png'
+    image: 'lego-animations.png',
+    description: 'Page in which i have practiced with the CSS animations.',
+    tags: ['html', 'css', 'javascript']
   }
 ]
