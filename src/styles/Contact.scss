@@ -22,7 +22,7 @@
     width: 100%;
     display: block;
     margin: 8px auto;
-    color: $white;
+    color: $black;
   }
   &__input {
     padding: 8px;
@@ -32,9 +32,11 @@
     font-weight: 400;
     display: block;
     font-size: 1.6rem;
+    border: 1px solid $gray;
   }
   &__message {
     min-height: 150px;
+    resize: none;
   }
   &__button {
     display: block;
@@ -48,17 +50,16 @@
     color: $white;
     background-color: $primary-color;
     transition: 0.4s ease;
+    border: 1px solid transparent;
 
     &:hover {
-      color: $primary-color;
-      background-color: $white;
+      background-color: hsl(229, 83%, 65%);
     }
   }
 }
 .links__container {
   padding: 12px;
   margin-top: 24px;
-  border: 2px solid $primary-color;
   border-radius: 12px;
 }
 .link {
@@ -67,11 +68,26 @@
 
   &__icon {
     font-size: 36px;
-    fill: $white;
+    fill: $gray;
   }
   &__caption {
     display: none;
+    padding: 8px;
+    border-radius: 4px;
     cursor: pointer;
+
+    &.messenger:hover {
+      color: $white;
+      background-color: #09f;
+    }
+    &.github:hover {
+      color: $white;
+      background-color: #111;
+    }
+    &.linkedin:hover {
+      color: $white;
+      background-color: #0077b5;
+    }
   }
 }
 .link__icon:hover,
@@ -80,19 +96,25 @@
   fill: $primary-color;
   transition: 0.4s ease;
 }
+.messenger:hover {
+  fill: #09f;
+  color: #09f;
+}
+.github:hover {
+  fill: #111;
+  color: #111;
+}
+.linkedin:hover {
+  fill: #0077b5;
+  color: #0077b5;
+}
 
 @media screen and (min-width: 700px) {
-  .contact__form {
-    border: 2px solid $primary-color;
-    border-radius: 12px;
-    padding: 48px;
-  }
-
   .link__icon {
     display: none;
   }
   .link__caption {
-    color: $white;
+    color: $gray;
     font-size: 1.6rem;
     display: inline-block;
   }

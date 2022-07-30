@@ -59,8 +59,8 @@ export const Contact = () => {
               className='link messenger__icon'
               href='https://m.me/orlando.diaztorrealva' rel='noreferrer'
             >
-              <FaFacebookMessenger className='link__icon' />
-              <span className='link__caption'>Messenger</span>
+              <FaFacebookMessenger className='link__icon messenger' />
+              <span className='link__caption messenger'>Messenger</span>
             </a>
 
             <a
@@ -68,8 +68,8 @@ export const Contact = () => {
               className='link github__icon'
               href='https://github.com/thomasjodt' rel='noreferrer'
             >
-              <FaGithub className='link__icon' />
-              <span className='link__caption'>Github</span>
+              <FaGithub className='link__icon github' />
+              <span className='link__caption github'>Github</span>
             </a>
 
             <a
@@ -77,8 +77,8 @@ export const Contact = () => {
               className='link linkedin__icon'
               href='https://www.linkedin.com/in/javier-orlando-diaz-torrealva-83b00b16a/' rel='noreferrer'
             >
-              <FaLinkedin className='link__icon' />
-              <span className='link__caption'>LinkedIn</span>
+              <FaLinkedin className='link__icon linkedin' />
+              <span className='link__caption linkedin'>LinkedIn</span>
             </a>
           </ul>
         </section>
