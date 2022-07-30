@@ -18,12 +18,18 @@ html {
 body {
   min-height: 100vh;
   font-size: 1.6rem;
-  background-color: $main-blue;
+  background-color: $white;
 }
 img {
   display: block;
   max-width: 100%;
 }
+button {
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
 #root {
   min-height: 100vh;
   padding-top: 64px;
@@ -31,11 +37,4 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  #root {
-    padding-top: 0;
-    padding-left: 64px;
-  }
 }
