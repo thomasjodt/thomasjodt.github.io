@@ -12,27 +12,31 @@
   justify-content: center;
   border-bottom: 1px solid $blue-active;
   background-color: $main-blue;
-}
 
-.material-symbols-rounded {
-  transition: 0.4s ease;
-  color: $blue-inactive;
+  &__icon {
+    width: 48px;
+    height: 48px;
 
-  &.active,
-  &:hover {
-    color: $blue-active;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .navbar {
-    top: 0;
-    left: 0;
-    width: 64px;
-    height: 100vh;
-    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    border-bottom: none;
-    border-right: 1px solid $blue-active;
+
+    & span {
+      font-size: 1.4rem;
+      color: $blue-active;
+    }
+
+    &:hover svg,
+    &:hover span {
+      color: $primary-color;
+      fill: $primary-color;
+    }
+
+    & svg {
+      fill: $blue-active;
+      width: 48px;
+      height: 48px;
+    }
   }
 }

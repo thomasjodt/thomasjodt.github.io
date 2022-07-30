@@ -1,36 +1,44 @@
 import '../styles/Navbar.scss'
 import { Link } from 'react-router-dom'
+import { ReactComponent as Home } from '../assets/icons/home.svg'
+import { ReactComponent as About } from '../assets/icons/about.svg'
+import { ReactComponent as Portfolio } from '../assets/icons/portfolio.svg'
+import { ReactComponent as Contact } from '../assets/icons/contact.svg'
 
 export const Navbar = () => {
   return (
     <nav className='navbar'>
 
       <Link
-        className='material-symbols-rounded'
+        className='navbar__icon'
         to='/'
       >
-        home
+        <Home />
+        <span>Home</span>
       </Link>
 
       <Link
-        className='material-symbols-rounded'
+        className='navbar__icon'
         to='about'
       >
-        person
+        <About />
+        <span>About</span>
       </Link>
 
       <Link
-        className='material-symbols-rounded'
+        className='navbar__icon'
         to='portfolio'
       >
-        work
+        <Portfolio />
+        <span>Portfolio</span>
       </Link>
 
       <Link
-        className='material-symbols-rounded'
+        className='navbar__icon'
         to='contact'
       >
-        mail
+        <Contact />
+        <span>Contact</span>
       </Link>
     </nav>
   )
