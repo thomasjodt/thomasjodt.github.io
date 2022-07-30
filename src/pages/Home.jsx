@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom'
-import '../styles/Home.scss'
+
+import { ReactComponent as DownloadIcon } from '../assets/icons/download.svg'
 import { MainContainer } from '../components/MainContainer'
+import '../styles/Home.scss'
 
 export const Home = () => {
   return (
     <MainContainer home='home__container'>
-      <img
-        className='home__image'
-        src='/images/me.jpg'
-        alt='Picture of me'
-      />
+      <div className='home__image'>
+        <img src='/images/Profile_bgless.png' alt='Profile picture' />
+      </div>
       <article className='home__info'>
         <p className='home__caption'>Hi, I am</p>
         <h1 className='home__title'>Orlando Díaz Torrealva</h1>
@@ -18,7 +18,7 @@ export const Home = () => {
       <section className='buttons__container'>
         <Link
           className='primary__button button'
-          to='/about-me'
+          to='/about'
         >
           Let's talk
         </Link>
@@ -26,7 +26,7 @@ export const Home = () => {
           href='https://drive.google.com/u/0/uc?id=1n9uUaOPHdaJB5HsbSWBqIHUikVx5kEuE&export=download'
           className='second__button button'
         >
-          Download CV
+          <DownloadIcon /> <span>CV</span>
         </a>
       </section>
     </MainContainer>

@@ -3,9 +3,14 @@
 .home__image {
   width: 75%;
   max-width: 300px;
-  object-fit: contain;
   margin-bottom: 24px;
-  border-radius: 50% 50% 0 0;
+  border-radius: 50% 50% 10px 10px;
+  overflow: hidden;
+  background-color: $primary-color;
+
+  & img {
+    object-fit: contain;
+  }
 }
 .home__info {
   margin-bottom: 32px;
@@ -15,13 +20,13 @@
 .home__description {
   font-weight: 500;
   font-size: 1.8rem;
-  color: $gray;
+  color: $black;
 }
 .home__title {
   font-size: 3rem;
   font-weight: 500;
   margin: 4px;
-  color: $black;
+  color: $primary-color;
 }
 .buttons__container {
   gap: 8px;
@@ -40,20 +45,38 @@
 }
 .primary__button {
   color: $white;
-  background-color: $primary-color;
+  background-color: hsl(229, 60%, 45%);
+
+  &:hover {
+    background-color: $primary-color;
+  }
 }
 .second__button {
   font-weight: 600;
   line-height: 48px;
   font-size: 1.4rem;
-  color: $blue-inactive;
-  background-color: $blue-active;
-}
-.primary__button:hover,
-.second__button:hover {
-  color: $primary-color;
-  border-color: $white;
-  background-color: $white;
+  border: 2px solid $primary-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  &:hover {
+    background-color: $primary-color;
+
+    & span,
+    & svg {
+      color: $white;
+      fill: $white;
+    }
+  }
+
+  & span,
+  & svg {
+    fill: $primary-color;
+    color: $primary-color;
+  }
 }
 
 @media screen and (min-width: 700px) {
