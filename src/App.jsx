@@ -1,4 +1,5 @@
 import { Route, Routes, HashRouter as Router } from 'react-router-dom'
+import { AppProvider } from './context/AppContext'
 import { Layout } from './layout/Layout'
 import { About } from './pages/About'
 import { Contact } from './pages/Contact'
@@ -10,15 +11,17 @@ export const App = () => {
   return (
     <>
       <Router>
-        <Layout>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='*' element={<NotFound />} />
-          </Routes>
-        </Layout>
+        <AppProvider>
+          <Layout>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/portfolio' element={<Portfolio />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='*' element={<NotFound />} />
+            </Routes>
+          </Layout>
+        </AppProvider>
       </Router>
     </>
   )
