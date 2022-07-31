@@ -5,8 +5,8 @@
   width: 70px;
   border-radius: 10px;
   position: relative;
-  box-shadow: 4px 4px 8px $shadow-color;
-  background-color: $main-blue;
+  box-shadow: 4px 4px 8px rgba($black, 0.2);
+  background-color: $oxford;
 
   & img {
     top: 50%;

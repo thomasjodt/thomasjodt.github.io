@@ -15,3 +15,9 @@
   align-items: center;
   flex-direction: column;
 }
+
+.dark {
+  .main__container {
+    background-color: $black;
+  }
+}

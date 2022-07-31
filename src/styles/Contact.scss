@@ -16,7 +16,7 @@
     font-size: 3.2rem;
     margin: 24px 0;
     text-align: center;
-    color: $primary-color;
+    color: $ultramarine;
   }
   &__label {
     width: 100%;
@@ -48,7 +48,7 @@
     border-radius: 12px;
     text-transform: uppercase;
     color: $white;
-    background-color: $primary-color;
+    background-color: $ultramarine;
     transition: 0.4s ease;
     border: 1px solid transparent;
 
@@ -92,8 +92,8 @@
 }
 .link__icon:hover,
 .link__caption:hover {
-  color: $primary-color;
-  fill: $primary-color;
+  color: $ultramarine;
+  fill: $ultramarine;
   transition: 0.4s ease;
 }
 .messenger:hover {
@@ -108,6 +108,40 @@
   fill: #0077b5;
   color: #0077b5;
 }
+.send__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  & span,
+  & svg {
+    fill: $white;
+    color: $white;
+  }
+}
+
+.dark {
+  .contact__label {
+    color: $white;
+  }
+  .link__icon {
+    fill: $white;
+    color: $white;
+  }
+  .messenger:hover {
+    fill: #09f;
+    color: #09f;
+  }
+  .github:hover {
+    fill: #757575;
+    color: #757575;
+  }
+  .linkedin:hover {
+    fill: #0077b5;
+    color: #0077b5;
+  }
+}
 
 @media screen and (min-width: 700px) {
   .link__icon {
@@ -117,5 +151,9 @@
     color: $gray;
     font-size: 1.6rem;
     display: inline-block;
+  }
+
+  .dark .link__caption:hover {
+    color: $white;
   }
 }

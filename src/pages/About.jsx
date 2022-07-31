@@ -3,13 +3,16 @@ import { skills } from '../assets/info'
 
 import { Skills } from '../components/Skills'
 import { MainContainer } from '../components/MainContainer'
+import { AppContext } from '../context/AppContext'
+import { useContext } from 'react'
 
 export const About = () => {
+  const { theme } = useContext(AppContext)
   return (
     <MainContainer home='about'>
       <img
         className='about__logo'
-        src='/images/Logo.png'
+        src={theme === 'light' ? '/images/Logo.png' : '/images/Logo-white.png'}
       />
       <div>
         <h2 className='about__title'>About me</h2>

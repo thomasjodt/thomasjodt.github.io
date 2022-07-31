@@ -10,7 +10,7 @@ export const Themes = () => {
     <aside className='navbar__aside'>
       <button onClick={e => toggleTheme(e.target)}>Light</button>
       <button onClick={e => toggleTheme(e.target)}>Dark</button>
-      <button onClick={e => toggleTheme(e.target)}>Space</button>
+      {/* <button onClick={e => toggleTheme(e.target)}>Space</button> */}
     </aside>
   )
 }

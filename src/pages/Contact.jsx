@@ -1,3 +1,4 @@
+import { ReactComponent as Send } from '../assets/icons/send.svg'
 import '../styles/Contact.scss'
 import '../assets/info'
 
@@ -45,10 +46,11 @@ export const Contact = () => {
             />
           </label>
           <button
-            className='contact__button'
+            className='contact__button send__button'
             type='submit'
           >
-            send
+            <Send />
+            <span>send</span>
           </button>
         </form>
         <section className='links__container'>

@@ -33,11 +33,11 @@
     }
     &:hover span,
     &:hover svg {
-      color: $primary-color;
-      fill: $primary-color;
+      color: $ultramarine;
+      fill: $ultramarine;
     }
     &.active {
-      border-bottom: 4px solid $primary-color;
+      border-bottom: 4px solid $ultramarine;
     }
     & svg {
       width: 48px;
@@ -59,7 +59,7 @@
   right: 4px;
   bottom: -8px;
   background-color: white;
-  transform: translateY(calc(100%));
+  transform: translateY(100%);
   overflow: hidden;
 
   & button {
@@ -67,8 +67,44 @@
     border: transparent;
     border-radius: 0;
     &:hover {
-      background-color: $primary-color;
+      background-color: $ultramarine;
       color: white;
+    }
+  }
+}
+
+.dark {
+  .navbar {
+    background-color: $black;
+    box-shadow: 0px 2px 4px rgba($dark, 0.1);
+
+    &__icon {
+      & span {
+        font-size: 1.2rem;
+        user-select: none;
+        color: $white;
+      }
+      &:hover span,
+      &:hover svg {
+        color: $ultramarine;
+        fill: $ultramarine;
+      }
+      & svg {
+        fill: $white;
+      }
+    }
+  }
+  & .navbar__aside {
+    border: 1px solid $white;
+
+    & button {
+      background-color: $black;
+      color: $white;
+
+      &:hover {
+        background-color: $ultramarine;
+        color: white;
+      }
     }
   }
 }
