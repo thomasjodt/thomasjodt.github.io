@@ -8,16 +8,18 @@ import { ReactComponent as Settings } from '../assets/icons/settings.svg'
 import { Themes } from './Themes'
 import { useState } from 'react'
 
-export const Navbar = () => {
+export const Navbar = (): JSX.Element => {
   const location = useLocation()
   const [themeBar, setThemeBar] = useState(false)
-  const toggleThemeBar = () => setThemeBar(!themeBar)
+  const toggleThemeBar = (): void => { setThemeBar(!themeBar) }
+
+  const verifyLocation = (currentLocation: string): string => (location.pathname === currentLocation) ? 'active' : ''
 
   return (
     <nav className='navbar'>
 
       <Link
-        className={`navbar__icon ${location.pathname === '/' ? 'active' : ''}`}
+        className={`navbar__icon ${verifyLocation('/')}`}
         to='/'
       >
         <Home />
@@ -25,7 +27,7 @@ export const Navbar = () => {
       </Link>
 
       <Link
-        className={`navbar__icon ${location.pathname === '/about' ? 'active' : ''}`}
+        className={`navbar__icon ${verifyLocation('/about')}`}
         to='about'
       >
         <About />
@@ -33,7 +35,7 @@ export const Navbar = () => {
       </Link>
 
       <Link
-        className={`navbar__icon ${location.pathname === '/portfolio' ? 'active' : ''}`}
+        className={`navbar__icon ${verifyLocation('/portfolio')}`}
         to='portfolio'
       >
         <Portfolio />
@@ -41,7 +43,7 @@ export const Navbar = () => {
       </Link>
 
       <Link
-        className={`navbar__icon ${location.pathname === '/contact' ? 'active' : ''}`}
+        className={`navbar__icon ${verifyLocation('/contact')}`}
         to='contact'
       >
         <Contact />

@@ -4,7 +4,7 @@ import { ReactComponent as DownloadIcon } from '../assets/icons/download.svg'
 import { MainContainer } from '../components/MainContainer'
 import '../styles/Home.scss'
 
-export const Home = () => {
+export const Home = (): JSX.Element => {
   return (
     <MainContainer home='home__container'>
       <div className='home__image'>

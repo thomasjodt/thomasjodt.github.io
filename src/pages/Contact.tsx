@@ -4,7 +4,7 @@ import '../assets/info'
 
 import { FaFacebookMessenger, FaLinkedin, FaGithub } from 'react-icons/fa'
 
-export const Contact = () => {
+export const Contact = (): JSX.Element => {
   return (
     <>
       <div className='main__container'>
