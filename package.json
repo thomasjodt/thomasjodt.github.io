@@ -20,37 +20,25 @@
     "standard"
   ],
   "author": "ThomasJODT <jodt5200@gmail.com>",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0",
-    "react-router-dom": "^6.3.0",
-    "vite-plugin-svgr": "^2.2.1"
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.8.0",
+    "vite-plugin-svgr": "^2.4.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-config-standard-jsx": "^11.0.0",
-    "eslint-config-standard-react": "^11.0.1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.30.1",
-    "gh-pages": "^4.0.0",
-    "sass": "^1.54.0",
-    "standard": "^17.0.0",
-    "vite": "^3.0.0"
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react-swc": "^3.0.1",
+    "gh-pages": "^5.0.0",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4"
   },
   "eslintConfig": {
-    "extends": [
-      "standard",
-      "standard-jsx",
-      "standard-react"
-    ],
+    "extends": [],
     "rules": {
       "react/react-in-jsx-scope": "off",
       "react/prop-types": "off"

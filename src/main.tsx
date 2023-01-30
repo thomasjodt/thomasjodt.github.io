@@ -5,7 +5,7 @@ import './styles/outfit.scss'
 
 import { App } from './App'
 
-createRoot(document.getElementById('root'))
+createRoot(document.getElementById('root') as HTMLElement)
   .render(
     <App />
   )
