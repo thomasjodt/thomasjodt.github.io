@@ -1,6 +1,13 @@
 import '../styles/Project.scss'
 
-export const Project = ({ url, name, image, tags, description }) => {
+interface Props {
+  url: string
+  name: string
+  image: string
+  tags: string[]
+  description: string
+}
+export const Project = ({ url, name, image, tags, description }: Props): JSX.Element => {
   return (
     <a
       target='_blank'

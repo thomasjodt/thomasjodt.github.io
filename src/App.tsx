@@ -7,7 +7,7 @@ import { Home } from './pages/Home'
 import { NotFound } from './pages/NotFound'
 import { Portfolio } from './pages/Portfolio'
 
-export const App = () => {
+export const App = (): JSX.Element => {
   return (
     <>
       <Router>

@@ -4,7 +4,7 @@ import { MainContainer } from '../components/MainContainer'
 
 import { Project } from '../components/Project'
 
-export const Portfolio = () => {
+export const Portfolio = (): JSX.Element => {
   return (
     <MainContainer home='portfolio'>
       <h2 className='portfolio__title'>My projects</h2>

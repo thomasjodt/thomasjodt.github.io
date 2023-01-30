@@ -3,11 +3,11 @@ import { skills } from '../assets/info'
 
 import { Skills } from '../components/Skills'
 import { MainContainer } from '../components/MainContainer'
-import { AppContext } from '../context/AppContext'
+import { AppContext, type ThemeContextType } from '../context/AppContext'
 import { useContext } from 'react'
 
-export const About = () => {
-  const { theme } = useContext(AppContext)
+export const About = (): JSX.Element => {
+  const { theme } = useContext(AppContext) as ThemeContextType
   return (
     <MainContainer home='about'>
       <img

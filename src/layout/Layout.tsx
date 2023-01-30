@@ -1,9 +1,13 @@
 import { useContext } from 'react'
 import { Navbar } from '../components/Navbar'
-import { AppContext } from '../context/AppContext'
+import { AppContext, type ThemeContextType } from '../context/AppContext'
 
-export const Layout = ({ children }) => {
-  const { theme } = useContext(AppContext)
+interface Props {
+  children: JSX.Element | JSX.Element[]
+}
+
+export const Layout = ({ children }: Props): JSX.Element => {
+  const { theme } = useContext(AppContext) as ThemeContextType
   return (
     <div
       style={style}

@@ -1,11 +1,22 @@
 import { createContext, useState } from 'react'
 
-export const AppContext = createContext()
+interface Props {
+  children: JSX.Element | JSX.Element[]
+}
 
-export const AppProvider = ({ children }) => {
-  const [theme, setTheme] = useState('light')
+export interface ThemeContextType {
+  theme: string
+  changeTheme: (theme: string) => void
+}
+
+export const AppContext = createContext({})
+
+export const AppProvider = ({ children }: Props): JSX.Element => {
+  const [theme, setTheme] = useState<string>('light')
+  const changeTheme = (newTheme: string): void => { setTheme(newTheme) }
+
   return (
-    <AppContext.Provider value={{ theme, setTheme }}>
+    <AppContext.Provider value={{ theme, changeTheme }}>
       {children}
     </AppContext.Provider>
   )
