@@ -22,7 +22,7 @@
     width: 100%;
     display: block;
     margin: 8px auto;
-    color: $black;
+    color: var(--text);
   }
   &__input {
     padding: 8px;
@@ -73,20 +73,11 @@
   &__caption {
     display: none;
     padding: 8px;
-    border-radius: 4px;
     cursor: pointer;
 
-    &.messenger:hover {
-      color: $white;
-      background-color: #09f;
-    }
-    &.github:hover {
-      color: $white;
-      background-color: #111;
-    }
-    &.linkedin:hover {
-      color: $white;
-      background-color: #0077b5;
+    &:hover {
+      font-weight: bold;
+      transform: scale(1.5);
     }
   }
 }

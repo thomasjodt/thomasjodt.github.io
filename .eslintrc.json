@@ -31,5 +31,5 @@
       "react/prop-types": "off"
     },
     "root": true,
-    "ignorePatterns":["vite.config.ts"]
+    "ignorePatterns":["vite.config.ts", "*.cjs", "*.js"]
 }

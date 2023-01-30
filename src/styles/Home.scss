@@ -20,7 +20,7 @@
 .home__description {
   font-weight: 500;
   font-size: 1.8rem;
-  color: $black;
+  color: var(--text);
 }
 .home__title {
   font-size: 3rem;
@@ -76,36 +76,6 @@
   & svg {
     fill: $ultramarine;
     color: $ultramarine;
-  }
-}
-
-.dark {
-  .home__image {
-    background-color: $ultramarine;
-  }
-  .home__caption,
-  .home__description {
-    color: $white;
-  }
-
-  .second__button {
-    border: 2px solid $white;
-
-    &:hover {
-      background-color: $white;
-
-      & span,
-      & svg {
-        color: $ultramarine;
-        fill: $ultramarine;
-      }
-    }
-
-    & span,
-    & svg {
-      fill: $white;
-      color: $white;
-    }
   }
 }
 

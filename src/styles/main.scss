@@ -8,7 +8,7 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  color: $black;
+  color: var(--text);
   font-family: 'Outfit', sans-serif;
 }
 html {
@@ -18,7 +18,7 @@ html {
 body {
   min-height: 100vh;
   font-size: 1.6rem;
-  background-color: $white;
+  background-color: var(--background);
 }
 img {
   display: block;
@@ -37,8 +37,4 @@ button {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-.dark {
-  background-color: $dark;
 }

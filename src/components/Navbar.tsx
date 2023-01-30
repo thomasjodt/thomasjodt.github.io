@@ -1,12 +1,14 @@
-import '../styles/Navbar.scss'
+import { Themes } from './Themes'
+import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+
 import { ReactComponent as Home } from '../assets/icons/home.svg'
 import { ReactComponent as About } from '../assets/icons/about.svg'
 import { ReactComponent as Portfolio } from '../assets/icons/portfolio.svg'
 import { ReactComponent as Contact } from '../assets/icons/contact.svg'
 import { ReactComponent as Settings } from '../assets/icons/settings.svg'
-import { Themes } from './Themes'
-import { useState } from 'react'
+
+import '../styles/Navbar.scss'
 
 export const Navbar = (): JSX.Element => {
   const location = useLocation()

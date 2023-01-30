@@ -1,6 +1,7 @@
 // Main colors
 $gray: #9999a1;
 $white: #e5ebeb;
+$justWhite: #fff;
 $black: #161616;
 $oxford: #03203a;
 $ultramarine: #4361ee;
@@ -8,3 +9,31 @@ $ultramarine: #4361ee;
 //  Theme colors
 $dark: #222;
 $light: #eee;
+
+/* ------------- Variables de colores -------------- */
+
+$lightText: $black;
+$darkText: $white;
+
+$lightBackground: $white;
+$darkBackground: $dark;
+
+$lightContainer: $justWhite;
+$darkContainer: $black;
+
+$lightNavIcon: $gray;
+$darkNavIcon: $justWhite;
+
+body.light {
+  --text: #{$lightText};
+  --background: #{$lightBackground};
+  --container: #{$lightContainer};
+  --navIcon: #{$lightNavIcon};
+}
+
+body.dark {
+  --text: #{$darkText};
+  --background: #{$darkBackground};
+  --container: #{$darkContainer};
+  --navIcon: #{$darkNavIcon};
+}

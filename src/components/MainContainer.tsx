@@ -2,7 +2,7 @@ import '../styles/MainContainer.scss'
 
 interface Props {
   children: JSX.Element | JSX.Element[]
-  home: string
+  home?: string
 }
 
 export const MainContainer = ({ children, home = '' }: Props): JSX.Element => {

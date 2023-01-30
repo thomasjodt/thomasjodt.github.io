@@ -6,7 +6,7 @@ import { Project } from '../components/Project'
 
 export const Portfolio = (): JSX.Element => {
   return (
-    <MainContainer home='portfolio'>
+    <MainContainer>
       <h2 className='portfolio__title'>My projects</h2>
       <section className='projects__grid'>
         {projects.map(e => (
